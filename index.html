@@ -26,10 +26,7 @@
 
         .device-notice {
             position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
+            top: 0; left: 0; right: 0; bottom: 0;
             background: rgba(89, 55, 43, 0.98);
             display: flex;
             align-items: center;
@@ -44,7 +41,7 @@
             background: #59372b;
             border-radius: 16px;
             border: 2px solid #9f624f;
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 8px 32px rgba(0,0,0,0.3);
             max-width: 90%;
             max-height: 80%;
             overflow-y: auto;
@@ -76,13 +73,12 @@
             font-size: 14px;
             font-family: 'Times New Roman', serif;
             transition: all 0.3s ease;
-            text-shadow: none;
         }
 
         .continue-btn:hover {
             background: linear-gradient(135deg, #9f624f, #cca98d);
             transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(204, 169, 141, 0.3);
+            box-shadow: 0 4px 12px rgba(204,169,141,0.3);
         }
 
         .ui-overlay {
@@ -153,18 +149,16 @@
         }
 
         .mobile-btn:hover {
-            background: rgba(204, 169, 141, 0.2);
+            background: rgba(204,169,141,0.2);
             transform: scale(1.05);
-            box-shadow: 0 4px 12px rgba(204, 169, 141, 0.3);
+            box-shadow: 0 4px 12px rgba(204,169,141,0.3);
         }
 
+        /* ===================== COMPUTER ===================== */
         .computer-overlay {
             position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(0, 0, 0, 0.95);
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0,0,0,0.95);
             z-index: 200;
             opacity: 0;
             visibility: hidden;
@@ -187,7 +181,7 @@
             border: 20px solid #c0c0c0;
             border-radius: 15px;
             transition: transform 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
         }
 
         .computer-overlay.active .computer-screen {
@@ -205,9 +199,7 @@
 
         .taskbar {
             position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
+            bottom: 0; left: 0; right: 0;
             height: 40px;
             background: linear-gradient(to bottom, #c0c0c0, #a0a0a0);
             border-top: 2px solid #e0e0e0;
@@ -225,6 +217,7 @@
             font-size: 12px;
         }
 
+        /* ===================== WINDOWS ===================== */
         .window {
             position: absolute;
             background: #c0c0c0;
@@ -235,9 +228,7 @@
             z-index: 1000;
         }
 
-        .window.active {
-            display: block;
-        }
+        .window.active { display: block; }
 
         .window-header {
             background: linear-gradient(to right, #000080, #4169e1);
@@ -251,10 +242,7 @@
             cursor: move;
         }
 
-        .window-controls {
-            display: flex;
-            gap: 2px;
-        }
+        .window-controls { display: flex; gap: 2px; }
 
         .window-control {
             width: 16px;
@@ -276,6 +264,7 @@
             line-height: 1.4;
         }
 
+        /* ===================== DESKTOP ICONS ===================== */
         .desktop-icon {
             position: absolute;
             width: 64px;
@@ -289,9 +278,7 @@
             transition: background 0.2s;
         }
 
-        .desktop-icon:hover {
-            background: rgba(255, 255, 255, 0.2);
-        }
+        .desktop-icon:hover { background: rgba(255,255,255,0.2); }
 
         .desktop-icon .icon {
             width: 32px;
@@ -303,13 +290,14 @@
             color: white;
             font-weight: bold;
             font-size: 16px;
+            border-radius: 6px;
         }
 
         .icon-text {
             color: white;
             font-size: 11px;
             text-align: center;
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
         }
 
         .close-computer {
@@ -329,11 +317,9 @@
             font-family: 'Times New Roman', serif;
         }
 
-        .close-computer:hover {
-            background: #9f624f;
-            transform: translateY(-1px);
-        }
+        .close-computer:hover { background: #9f624f; transform: translateY(-1px); }
 
+        /* ===================== CONTENT STYLES ===================== */
         .experience-item {
             background: #f0f0f0;
             padding: 10px;
@@ -354,33 +340,21 @@
             margin-bottom: 5px;
         }
 
-        .linkedin-link {
-            color: #0000ee;
-            text-decoration: underline;
-            cursor: pointer;
-        }
+        .linkedin-link { color: #0000ee; text-decoration: underline; cursor: pointer; }
+        .linkedin-link:hover { color: #ff0000; }
 
-        .linkedin-link:hover {
-            color: #ff0000;
-        }
-
+        /* ===================== TV ===================== */
         .tv-overlay {
             position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(0, 0, 0, 0.9);
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0,0,0,0.9);
             z-index: 200;
             opacity: 0;
             visibility: hidden;
             transition: all 0.6s ease;
         }
 
-        .tv-overlay.active {
-            opacity: 1;
-            visibility: visible;
-        }
+        .tv-overlay.active { opacity: 1; visibility: visible; }
 
         .tv-screen {
             position: absolute;
@@ -393,12 +367,10 @@
             border: 30px solid #222;
             border-radius: 20px;
             transition: transform 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.7);
         }
 
-        .tv-overlay.active .tv-screen {
-            transform: translate(-50%, -50%) scale(1);
-        }
+        .tv-overlay.active .tv-screen { transform: translate(-50%, -50%) scale(1); }
 
         .tv-content {
             width: 100%;
@@ -425,6 +397,7 @@
             gap: 20px;
             padding: 30px;
             height: calc(100% - 80px);
+            overflow-y: auto;
         }
 
         .app-item {
@@ -446,14 +419,11 @@
 
         .app-item:hover {
             transform: scale(1.05);
-            box-shadow: 0 10px 20px rgba(204, 169, 141, 0.4);
+            box-shadow: 0 10px 20px rgba(204,169,141,0.4);
             background: linear-gradient(135deg, #cca98d, #9f624f);
         }
 
-        .app-icon {
-            font-size: 36px;
-            margin-bottom: 10px;
-        }
+        .app-icon { font-size: 36px; margin-bottom: 10px; }
 
         .close-tv {
             position: absolute;
@@ -472,10 +442,7 @@
             font-family: 'Times New Roman', serif;
         }
 
-        .close-tv:hover {
-            background: #9f624f;
-            transform: translateY(-1px);
-        }
+        .close-tv:hover { background: #9f624f; transform: translateY(-1px); }
 
         .interactive-hint {
             position: fixed;
@@ -493,99 +460,195 @@
             border: 1px solid #9f624f;
         }
 
-        .interactive-hint.show {
-            opacity: 1;
-        }
+        .interactive-hint.show { opacity: 1; }
 
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
 
         @keyframes slideIn {
-            from {
-                transform: translateX(-100%);
-                opacity: 0;
+            from { transform: translateX(-100%); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+
+        /* ===================== RESPONSIVE — TABLET ===================== */
+        @media (max-width: 1024px) {
+            .computer-screen {
+                border-width: 12px;
             }
-            to {
-                transform: translateX(0);
-                opacity: 1;
+            .tv-screen {
+                border-width: 20px;
             }
         }
 
+        /* ===================== RESPONSIVE — MOBILE ===================== */
         @media (max-width: 768px) {
-            .computer-screen, .tv-screen {
-                width: 95vw;
-                height: 80vh;
+            .computer-screen {
+                width: 96vw;
+                height: 84vh;
+                border-width: 8px;
+            }
+
+            .tv-screen {
+                width: 96vw;
+                height: 82vh;
                 border-width: 10px;
             }
 
-            .ui-overlay {
-                top: 10px;
-                left: 10px;
-            }
-
-            .instructions {
-                max-width: 200px;
-                padding: 15px;
-            }
-
-            .logo {
-                font-size: 20px;
-            }
-
-            .notice-content {
-                padding: 30px 20px;
-            }
-
-            .notice-content h2 {
-                font-size: 20px;
-            }
-
+            /* Fenêtres : centrage forcé, taille fluide */
             .window {
-                min-width: 280px;
-                width: 90vw !important;
-                height: 70vh !important;
+                position: fixed !important;
+                top: 50% !important;
+                left: 50% !important;
+                transform: translate(-50%, -50%) !important;
+                width: 92vw !important;
+                max-width: 92vw !important;
+                height: 78vh !important;
+                min-width: unset !important;
+                z-index: 9999 !important;
             }
 
+            .window-content {
+                font-size: 13px;
+                line-height: 1.5;
+                height: calc(100% - 28px);
+                overflow-y: auto;
+                -webkit-overflow-scrolling: touch;
+            }
+
+            .window-header {
+                font-size: 11px;
+                padding: 5px 8px;
+            }
+
+            /* Icônes bureau : grille flex automatique */
+            .screen-content {
+                display: flex !important;
+                flex-wrap: wrap !important;
+                align-content: flex-start !important;
+                padding: 12px 8px 50px 8px !important;
+                gap: 6px !important;
+                overflow: hidden !important;
+            }
+
+            .desktop-icon {
+                position: relative !important;
+                top: unset !important;
+                left: unset !important;
+                width: 72px;
+                height: 82px;
+                flex-shrink: 0;
+            }
+
+            .desktop-icon .icon {
+                width: 38px !important;
+                height: 38px !important;
+                font-size: 18px !important;
+            }
+
+            .icon-text { font-size: 10px; }
+
+            /* Grille TV */
             .app-grid {
                 grid-template-columns: repeat(2, 1fr);
-                gap: 15px;
-                padding: 20px;
+                gap: 12px;
+                padding: 15px;
+                height: calc(100% - 65px);
             }
 
-            .mobile-controls {
-                flex-wrap: wrap;
-                max-width: 90%;
+            .app-item {
+                min-height: 85px;
+                font-size: 13px;
+                border-radius: 10px;
             }
 
-            .mobile-btn {
+            .app-icon { font-size: 26px; margin-bottom: 6px; }
+
+            .tv-header {
+                font-size: 18px;
+                padding: 12px;
+            }
+
+            /* Boutons fermer */
+            .close-computer,
+            .close-tv {
+                top: 10px;
+                right: 10px;
+                padding: 8px 14px;
+                font-size: 12px;
+            }
+
+            /* Panel instructions */
+            .ui-overlay { top: 8px; left: 8px; }
+
+            .instructions {
+                max-width: 170px;
                 padding: 10px 12px;
-                font-size: 11px;
             }
+
+            .instructions h3 { font-size: 13px; margin-bottom: 8px; }
+            .instructions p { font-size: 11px; margin-bottom: 4px; }
+
+            .logo { font-size: 18px; margin-bottom: 8px; }
+
+            /* Boutons mobiles */
+            .mobile-controls { flex-wrap: wrap; max-width: 90%; gap: 8px; }
+            .mobile-btn { padding: 10px 12px; font-size: 11px; }
+
+            /* Notice */
+            .notice-content { padding: 24px 18px; }
+            .notice-content h2 { font-size: 20px; }
         }
 
+        /* ===================== RESPONSIVE — SMALL MOBILE ===================== */
         @media (max-width: 480px) {
-            .app-grid {
-                grid-template-columns: 1fr;
+            .app-grid { grid-template-columns: repeat(2, 1fr); }
+
+            .window {
+                height: 85vh !important;
             }
+
+            .desktop-icon { width: 62px; height: 74px; }
+
+            /* Masquer le panel instructions sur très petit écran */
+            .instructions { display: none; }
+            .logo { font-size: 16px; }
         }
 
         @media (hover: none) {
-            .interactive-hint {
-                display: none;
+            .interactive-hint { display: none; }
+        }
+
+        /* ===================== ORIENTATION PAYSAGE MOBILE ===================== */
+        @media (max-width: 900px) and (orientation: landscape) {
+            .computer-screen {
+                width: 96vw;
+                height: 90vh;
             }
+            .tv-screen {
+                width: 96vw;
+                height: 90vh;
+            }
+            .window {
+                height: 82vh !important;
+            }
+            .app-grid {
+                grid-template-columns: repeat(3, 1fr);
+                padding: 10px;
+                gap: 8px;
+            }
+            .app-item { min-height: 70px; font-size: 12px; }
+            .app-icon { font-size: 20px; margin-bottom: 4px; }
         }
     </style>
 </head>
 <body>
+
     <!-- Welcome Notice -->
     <div class="device-notice" id="deviceNotice">
         <div class="notice-content">
             <h2>Welcome to my living room</h2>
             <p>Discover an elegant space with an immersive experience.</p>
             <p>Navigation: Drag to explore, pinch to zoom on mobile, or use the control buttons.</p>
-            <p>Click on the computer or television to discover my portfolio.</p>
+            <p>Click on the computer or the TV to discover my portfolio.</p>
             <button class="continue-btn" onclick="hideNotice()">Enter the living room</button>
         </div>
     </div>
@@ -604,7 +667,7 @@
 
     <!-- Mobile Controls -->
     <div class="mobile-controls">
-        <button class="mobile-btn" onclick="resetCamera()">Overview</button>
+        <button class="mobile-btn" onclick="resetCamera()">Vue d'ensemble</button>
         <button class="mobile-btn" onclick="autoRotate()">Auto rotate</button>
     </div>
 
@@ -612,39 +675,37 @@
 
     <!-- Computer Overlay -->
     <div class="computer-overlay" id="computerOverlay">
-        <button class="close-computer" onclick="closeComputer()">✕ Close</button>
+        <button class="close-computer" onclick="closeComputer()">&#10005; Close</button>
         <div class="computer-screen">
-            <div class="screen-content">
-                <!-- Desktop Icons -->
+            <div class="screen-content" id="screenContent">
                 <div class="desktop-icon" style="top: 50px; left: 50px;" onclick="openWindow('about')">
                     <div class="icon" style="background: #0080ff;">i</div>
                     <div class="icon-text">About</div>
                 </div>
                 <div class="desktop-icon" style="top: 50px; left: 150px;" onclick="openWindow('education')">
-                    <div class="icon" style="background: #ff8000;">📚</div>
+                    <div class="icon" style="background: #ff8000;">&#128218;</div>
                     <div class="icon-text">Education</div>
                 </div>
                 <div class="desktop-icon" style="top: 150px; left: 50px;" onclick="openWindow('experience')">
-                    <div class="icon" style="background: #008000;">💼</div>
-                    <div class="icon-text">Experience</div>
+                    <div class="icon" style="background: #008000;">&#128188;</div>
+                    <div class="icon-text">Expérience</div>
                 </div>
                 <div class="desktop-icon" style="top: 150px; left: 150px;" onclick="openWindow('volunteer')">
-                    <div class="icon" style="background: #800080;">❤️</div>
-                    <div class="icon-text">Volunteering</div>
+                    <div class="icon" style="background: #800080;">&#10084;&#65039;</div>
+                    <div class="icon-text">Bénévolat</div>
                 </div>
                 <div class="desktop-icon" style="top: 250px; left: 50px;" onclick="openWindow('awards')">
-                    <div class="icon" style="background: #ffd700;">🏆</div>
+                    <div class="icon" style="background: #ffd700;">&#127942;</div>
                     <div class="icon-text">Awards</div>
                 </div>
                 <div class="desktop-icon" style="top: 250px; left: 150px;" onclick="openWindow('skills')">
-                    <div class="icon" style="background: #ff4500;">⚡</div>
+                    <div class="icon" style="background: #ff4500;">&#9889;</div>
                     <div class="icon-text">Skills</div>
                 </div>
                 <div class="desktop-icon" style="top: 350px; left: 50px;" onclick="openWindow('research')">
-                    <div class="icon" style="background: #006633;">🔬</div>
+                    <div class="icon" style="background: #006633;">&#128300;</div>
                     <div class="icon-text">Research</div>
                 </div>
-
                 <div class="taskbar">
                     <div class="start-button">Start</div>
                 </div>
@@ -654,36 +715,34 @@
 
     <!-- TV Overlay -->
     <div class="tv-overlay" id="tvOverlay">
-        <button class="close-tv" onclick="closeTV()">✕ Close</button>
+        <button class="close-tv" onclick="closeTV()">&#10005; Close</button>
         <div class="tv-screen">
             <div class="tv-content">
-                <div class="tv-header">
-                    📺 Entertainment
-                </div>
+                <div class="tv-header">&#128250; Entertainment</div>
                 <div class="app-grid">
                     <div class="app-item" onclick="openApp('netflix')">
-                        <div class="app-icon">🎬</div>
+                        <div class="app-icon">&#127916;</div>
                         <div>Netflix</div>
                     </div>
                     <div class="app-item" onclick="openApp('youtube')">
-                        <div class="app-icon">📺</div>
+                        <div class="app-icon">&#128250;</div>
                         <div>YouTube</div>
                     </div>
                     <div class="app-item" onclick="openApp('spotify')">
-                        <div class="app-icon">🎵</div>
+                        <div class="app-icon">&#127925;</div>
                         <div>Spotify</div>
                     </div>
                     <div class="app-item" onclick="openApp('prime')">
-                        <div class="app-icon">📦</div>
+                        <div class="app-icon">&#128230;</div>
                         <div>Prime Video</div>
                     </div>
                     <div class="app-item" onclick="openApp('disney')">
-                        <div class="app-icon">🏰</div>
+                        <div class="app-icon">&#127968;</div>
                         <div>Disney+</div>
                     </div>
                     <div class="app-item" onclick="openApp('games')">
-                        <div class="app-icon">🎮</div>
-                        <div>Games</div>
+                        <div class="app-icon">&#127918;</div>
+                        <div>Jeux</div>
                     </div>
                 </div>
             </div>
@@ -695,23 +754,19 @@
         <div class="window-header">
             About
             <div class="window-controls">
-                <div class="window-control" onclick="closeWindow('about')">×</div>
+                <div class="window-control" onclick="closeWindow('about')">&#215;</div>
             </div>
         </div>
         <div class="window-content" style="color: #59372b;">
-            <p><strong>IT student passionate about cybersecurity, programming, data, and governance.</strong></p>
-            <br>
-            <p>I love documentaries and everything related to data. My approach combines creativity and technical rigor to create innovative solutions.</p>
-            <br>
-            <p>Currently pursuing a Master's degree in Information Technology at UQAM, I am developing my skills in a stimulating academic environment while applying my knowledge to concrete projects.</p>
-            <br>
-            <a href="https://www.linkedin.com/in/manelbaali/" target="_blank" class="linkedin-link">🔗 My LinkedIn Profile</a>
-            <br><br>
-            <p><strong>My passions:</strong></p>
+            <p><strong>IT student passionate about cybersecurity, programming, data, and governance.</strong></p><br>
+            <p>I love documentaries and everything data-related. My approach combines creativity and technical rigor to create innovative solutions.</p><br>
+            <p>Currently pursuing a Master's in Information Technology at UQAM, I develop my skills in a stimulating academic environment while applying my knowledge to concrete projects.</p><br>
+            <a href="https://www.linkedin.com/in/manelbaali/" target="_blank" class="linkedin-link">&#128279; My Linkedin profile</a><br><br>
+            <p><strong>Contact me:</strong> <a href="mailto:manelbaali@hotmail.com" class="linkedin-link">manelbaali@hotmail.com</a></p><br><p><strong>My passions:</strong></p>
             <ul>
                 <li>Cybersecurity, governance and data protection</li>
                 <li>Development and programming</li>
-                <li>UX Design and user experience</li>
+                <li>UX design and user experience</li>
                 <li>Data analysis and documentaries</li>
             </ul>
         </div>
@@ -722,29 +777,29 @@
         <div class="window-header">
             Education
             <div class="window-controls">
-                <div class="window-control" onclick="closeWindow('education')">×</div>
+                <div class="window-control" onclick="closeWindow('education')">&#215;</div>
             </div>
         </div>
         <div class="window-content" style="color: #1a1611;">
             <div class="experience-item">
                 <div class="experience-title">Master's in Information Technology</div>
-                <div class="experience-company">UQAM — In progress</div>
+                <div class="experience-company">UQAM &mdash; En cours</div>
                 <p>Deepening IT knowledge with a focus on innovation and applied research.</p>
             </div>
             <div class="experience-item">
-                <div class="experience-title">Bachelor's in Business Administration — IT</div>
-                <div class="experience-company">UQAM — Honours (Completed)</div>
-                <p>Information technology concentration, bridging management and technical skills.</p>
+                <div class="experience-title">Bachelor's in Business Administration &mdash; IT</div>
+                <div class="experience-company">UQAM &mdash; Honours (Completed)</div>
+                <p>Concentration in information technologies, combining management and technical skills.</p>
             </div>
             <div class="experience-item">
-                <div class="experience-title">DEC in International Business</div>
-                <div class="experience-company">Dawson College (Completed)</div>
-                <p>Versatile training opening perspectives on the world and global issues.</p>
+                <div class="experience-title">College Diploma in International Business</div>
+                <div class="experience-company">Collège Dawson (Completed)</div>
+                <p>Versatile education opening perspectives on global issues.</p>
             </div>
             <div class="experience-item">
-                <div class="experience-title">DES — Enriched Sciences</div>
-                <div class="experience-company">École secondaire Henri-Bourassa (Completed)</div>
-                <p>Solid scientific foundation as the basis for my higher education.</p>
+                <div class="experience-title">High School Diploma &mdash; Enriched Sciences</div>
+                <div class="experience-company">Henri-Bourassa High School (Completed)</div>
+                <p>Strong scientific foundation supporting my graduate studies.</p>
             </div>
         </div>
     </div>
@@ -754,28 +809,28 @@
         <div class="window-header">
             Professional Experience
             <div class="window-controls">
-                <div class="window-control" onclick="closeWindow('experience')">×</div>
+                <div class="window-control" onclick="closeWindow('experience')">&#215;</div>
             </div>
         </div>
         <div class="window-content" style="color: #1a1611;">
             <div class="experience-item">
                 <div class="experience-title">Information Management Advisor</div>
-                <div class="experience-company">Ministère de l'Immigration, de la Francisation et de l'Intégration (MIFI) — June 2025 to present</div>
-                <p>Strategic support to the Secretariat General. Advice on documentary governance, development of the digital registry, programming and automation (JSON, Python, dashboards).</p>
+                <div class="experience-company">Ministry of Immigration, Francization and Integration (MIFI) &mdash; June 2025 to present</div>
+                <p>Strategic support to the General Secretariat. Advice on document governance, digital registry development, programming and automation (JSON, Python, dashboards).</p>
             </div>
             <div class="experience-item">
-                <div class="experience-title">Compliance Analyst</div>
-                <div class="experience-company">Desjardins — Feb. 2022 to May 2025</div>
+                <div class="experience-title">Analyste en conformité</div>
+                <div class="experience-company">Desjardins &mdash; Févr. 2022 à mai 2025</div>
                 <p>Writing articles and columns and representing young adults before municipal bodies.</p>
             </div>
             <div class="experience-item">
-                <div class="experience-title">Member Services Agent</div>
-                <div class="experience-company">Desjardins — Nov. 2021 to Feb. 2022</div>
-                <p>Member support, monetary transactions, promotion of digital autonomy, and personalized advice.</p>
+                <div class="experience-title">Agent aux services aux membres</div>
+                <div class="experience-company">Desjardins &mdash; Nov. 2021 à févr. 2022</div>
+                <p>Member support, monetary transactions, promotion of digital autonomy and personalized advice.</p>
             </div>
             <div class="experience-item">
                 <div class="experience-title">Reception Agent</div>
-                <div class="experience-company">BravoTelecom-Vidéotron — Sept. to Nov. 2021</div>
+                <div class="experience-company">BravoTelecom-Vid&#233;otron &mdash; Sept. à nov. 2021</div>
                 <p>Reception, file management and activation of telecommunications services.</p>
             </div>
         </div>
@@ -784,31 +839,31 @@
     <!-- Volunteering Window -->
     <div class="window" id="window-volunteer" style="top: 100px; left: 300px; width: 580px; height: 480px;">
         <div class="window-header">
-            Volunteering &amp; Engagement
+            Bénévolat &amp; Engagement
             <div class="window-controls">
-                <div class="window-control" onclick="closeWindow('volunteer')">×</div>
+                <div class="window-control" onclick="closeWindow('volunteer')">&#215;</div>
             </div>
         </div>
         <div class="window-content" style="color: #1a1611;">
             <div class="experience-item">
-                <div class="experience-title">Tax Filing Volunteer</div>
-                <div class="experience-company">Revenu Québec — Feb. 2020 to Apr. 2023</div>
-                <p>Completed income tax returns for individuals with simple tax situations. Economic empowerment.</p>
+                <div class="experience-title">Tax Return Volunteer</div>
+                <div class="experience-company">Revenu Qu&#233;bec &mdash; Fév. 2020 à avr. 2023</div>
+                <p>Preparation of tax returns for individuals with simple tax situations. Economic empowerment.</p>
             </div>
             <div class="experience-item">
                 <div class="experience-title">Welcome Volunteer</div>
-                <div class="experience-company">Dawson College — Nov. 2019 to Mar. 2021</div>
-                <p>Coordinator assistance, resources for international students, integration facilitation.</p>
+                <div class="experience-company">Dawson College &mdash; Nov. 2019 à mars 2021</div>
+                <p>Coordination assistance, resources for international students, integration facilitation.</p>
             </div>
             <div class="experience-item">
-                <div class="experience-title">Student Radio</div>
-                <div class="experience-company">Boscoville — Oct. 2014 to May 2019</div>
+                <div class="experience-title">Radio étudiante</div>
+                <div class="experience-company">Boscoville &mdash; Oct. 2014 to May 2019</div>
                 <p>Columns, articles, representation of young adults before municipal bodies.</p>
             </div>
             <div class="experience-item">
-                <div class="experience-title">Community Development</div>
-                <div class="experience-company">Coup de pouce jeunesse — Sept. 2015 to Mar. 2016</div>
-                <p>Outreach to disadvantaged families, school perseverance conferences and prevention.</p>
+                <div class="experience-title">Développement communautaire</div>
+                <div class="experience-company">Coup de pouce jeunesse &mdash; Sept. 2015 to March 2016</div>
+                <p>Awareness among disadvantaged families, conferences on school perseverance and prevention.</p>
             </div>
         </div>
     </div>
@@ -816,31 +871,31 @@
     <!-- Awards Window -->
     <div class="window" id="window-awards" style="top: 120px; left: 320px; width: 560px; height: 500px;">
         <div class="window-header">
-            Awards &amp; Distinctions
+            Prix &amp; Awards
             <div class="window-controls">
-                <div class="window-control" onclick="closeWindow('awards')">×</div>
+                <div class="window-control" onclick="closeWindow('awards')">&#215;</div>
             </div>
         </div>
         <div class="window-content" style="color: #1a1611;">
             <div class="experience-item">
-                <div class="experience-title">Canada Graduate Scholarship – Master's (CGS-M) — Social Sciences and Humanities Committee (SSHRC)</div>
-                <div class="experience-company">Social Sciences and Humanities Research Council of Canada (SSHRC) — 2026–2027</div>
-                <p>Federal graduate research scholarship awarded by the Social Sciences and Humanities Research Council of Canada (SSHRC) under the Canada Graduate Scholarships – Master's (CGS-M) program. Recognizes academic excellence and research potential.</p>
+                <div class="experience-title">Canada Graduate Scholarships &ndash; Master's (CGS-M) &mdash; SSHRC</div>
+                <div class="experience-company">Social Sciences and Humanities Research Council of Canada (SSHRC) &mdash; 2026&ndash;2027</div>
+                <p>Federal graduate research scholarship, highlighting academic excellence and research potential.</p>
             </div>
             <div class="experience-item">
-                <div class="experience-title">Hélène and Jean-Louis-Tassé Scholarship</div>
-                <div class="experience-company">UQAM Foundation — May 2025</div>
-                <p>University excellence recognized by the School of Management Sciences.</p>
+                <div class="experience-title">Bourses Hélène et Jean-Louis-Tassé</div>
+                <div class="experience-company">UQAM Foundation &mdash; May 2025</div>
+                <p>Academic excellence recognized by the School of Management Sciences.</p>
             </div>
             <div class="experience-item">
-                <div class="experience-title">Richard-Guay Scholarship</div>
-                <div class="experience-company">UQAM Foundation — Dec. 2024</div>
-                <p>Sustained academic record with a GPA above 3.5/4.3.</p>
+                <div class="experience-title">Bourse Richard-Guay</div>
+                <div class="experience-company">UQAM Foundation &mdash; Dec. 2024</div>
+                <p>Strong academic record with a GPA above 3.5/4.3.</p>
             </div>
             <div class="experience-item">
                 <div class="experience-title">Academic Excellence Scholarship</div>
-                <div class="experience-company">UQAM Foundation — Jan. 2023</div>
-                <p>Recognition of sustained academic record for women in STEM.</p>
+                <div class="experience-company">UQAM Foundation &mdash; Jan. 2023</div>
+                <p>Recognition of strong academic record for women in STEM.</p>
             </div>
         </div>
     </div>
@@ -848,9 +903,9 @@
     <!-- Skills Window -->
     <div class="window" id="window-skills" style="top: 80px; left: 280px; width: 580px; height: 500px;">
         <div class="window-header">
-            Technical Skills
+            Skills techniques
             <div class="window-controls">
-                <div class="window-control" onclick="closeWindow('skills')">×</div>
+                <div class="window-control" onclick="closeWindow('skills')">&#215;</div>
             </div>
         </div>
         <div class="window-content" style="color: #59372b;">
@@ -861,81 +916,75 @@
                 <li>Tableau Desktop &amp; Prep Builder</li>
                 <li>Microsoft Power BI, Google Analytics</li>
                 <li>Pivot Tables</li>
-            </ul>
-            <br>
+            </ul><br>
             <p><strong>Development &amp; Programming:</strong></p>
             <ul>
                 <li>HTML5, JavaScript</li>
                 <li>C++, CSS, Java</li>
                 <li>Node.js</li>
                 <li>Git, GitHub, DevOps</li>
-            </ul>
-            <br>
+            </ul><br>
             <p><strong>Design &amp; UX:</strong></p>
             <ul>
                 <li>Figma, Adobe Creative Suite</li>
-                <li>Prototyping, Wireframing</li>
-                <li>User testing, Personas</li>
-                <li>Design thinking, Accessibility</li>
-            </ul>
-            <br>
+                <li>Prototypage, maquettage</li>
+                <li>Tests utilisateurs, personas</li>
+                <li>Design thinking, accessibilité</li>
+            </ul><br>
             <p><strong>Languages:</strong></p>
             <ul>
-                <li><strong>French:</strong> Bilingual</li>
-                <li><strong>English:</strong> Bilingual</li>
-                <li><strong>Berber:</strong> Bilingual</li>
+                <li><strong>French :</strong> Bilingual</li>
+                <li><strong>English :</strong> Bilingual</li>
+                <li><strong>Berber :</strong> Bilingual</li>
                 <li><strong>Arabic:</strong> Limited professional proficiency</li>
-            </ul>
-            <br>
-            <p><strong>Soft Skills:</strong></p>
+            </ul><br>
+            <p><strong>Transferable Skills:</strong></p>
             <ul>
                 <li>Problem solving</li>
                 <li>Time management</li>
                 <li>Adaptability</li>
-                <li>Confidentiality awareness</li>
+                <li>Privacy awareness</li>
             </ul>
         </div>
     </div>
 
-    <!-- Research Window -->
+    <!-- Fenêtre Research -->
     <div class="window" id="window-research" style="top: 80px; left: 260px; width: 650px; height: 520px;">
         <div class="window-header">
-            Research — Thesis in Progress
+            Research &mdash; Mémoire en cours
             <div class="window-controls">
-                <div class="window-control" onclick="closeWindow('research')">×</div>
+                <div class="window-control" onclick="closeWindow('research')">&#215;</div>
             </div>
         </div>
         <div class="window-content" style="color: #1a1611;">
             <div class="experience-item">
-                <div class="experience-title">🔬 Master's Thesis — Currently being written</div>
-                <div class="experience-company">Université du Québec à Montréal (UQAM) — School of Management Sciences (ESG)</div>
-                <p><strong>Subject:</strong> Algorithmic governance, human journey, and algorithmic biases in migration management systems.</p>
-                <br>
-                <p>Research on algorithmic biases (data, modelling, deployment, institutional) in automated decision-making tools applied to migration management. Development of an algorithmic governance framework evaluated in Canadian, European, and American contexts.</p>
-                <br>
-                <p><strong>Methodology:</strong> Design Science Research (DSR) — documentary analysis, content analysis, and semi-structured interviews.</p>
+                <div class="experience-title">&#128300; Master's Thesis &mdash; In progress</div>
+                <div class="experience-company">Universit&#233; du Qu&#233;bec &#224; Montr&#233;al (UQAM) &mdash; School of Management Sciences (ESG)</div>
+                <p><strong>Subject:</strong> Algorithmic governance, human pathways and algorithmic bias in migration management systems.</p><br>
+                <p>Research on algorithmic bias (data, modeling, deployment, institutional) in automated decision-making tools applied to migration management. Development of an algorithmic governance framework evaluated in Canadian, European, and American contexts.</p><br>
+                <p><strong>Methodology:</strong> Design Science Research (DSR) &mdash; documentary analysis, content analysis and semi-structured interviews.</p>
             </div>
             <div class="experience-item">
                 <div class="experience-title">💰 Funding</div>
                 <div class="experience-company">Social Sciences and Humanities Research Council of Canada (SSHRC)</div>
-                <p>Research funded by the Canada Graduate Scholarship – Master's (CGS-M) — Social Sciences and Humanities Committee, Social Sciences and Humanities Research Council of Canada (SSHRC).</p>
+                <p>Research funded by the Canada Graduate Scholarships – Master's (CGS-M) — Social Sciences and Humanities Research Council of Canada (SSHRC).</p>
             </div>
             <div class="experience-item">
                 <div class="experience-title">🤝 Institutional Collaboration</div>
-                <div class="experience-company">Ministère de l'Immigration, de la Francisation et de l'Intégration (MIFI) — Government of Quebec</div>
-                <p>Research conducted in collaboration with the Ministry of Immigration, Francization and Integration (MIFI). Field access and sectoral expertise in Quebec immigration management.</p>
+                <div class="experience-company">Ministry of Immigration, Francization and Integration (MIFI) &mdash; Government of Quebec</div>
+                <p>Research conducted in collaboration with MIFI. Field access and sector expertise in immigration management in Quebec.</p>
             </div>
             <div class="experience-item">
-                <div class="experience-title">📍 Affiliation &amp; Writing</div>
-                <div class="experience-company">UQAM — Master's in Information Technology (MIT)</div>
-                <p>Thesis currently being written at the Université du Québec à Montréal (UQAM), as part of the Master's in Information Technology (MIT) at the School of Management Sciences (ESG).</p>
+                <div class="experience-title">&#128205; Affiliation and Writing</div>
+                <div class="experience-company">UQAM &mdash; Master's in Information Technology (MIS)</div>
+                <p>Thesis currently being written at UQAM, as part of the MIT program at the School of Management Sciences (ESG).</p>
             </div>
         </div>
     </div>
 
     <script>
         let scene, camera, renderer;
-        let salon, computerMesh, tvMesh, chandelierMesh;
+        let computerMesh, tvMesh;
         let mouse = new THREE.Vector2();
         let raycaster = new THREE.Raycaster();
         let clickableObjects = [];
@@ -943,19 +992,15 @@
 
         let cameraControls = {
             isMouseDown: false,
-            mouseX: 0,
-            mouseY: 0,
-            targetRotationX: 0,
-            targetRotationY: 0,
-            rotationX: 0,
-            rotationY: 0,
-            distance: 25,
-            targetDistance: 25,
+            mouseX: 0, mouseY: 0,
+            targetRotationX: 0, targetRotationY: 0,
+            rotationX: 0, rotationY: 0,
+            distance: 25, targetDistance: 25,
             autoRotate: false
         };
 
-        let touches = [];
         let lastPinchDistance = 0;
+        const isMobile = () => window.innerWidth <= 768;
 
         function hideNotice() {
             document.getElementById('deviceNotice').style.display = 'none';
@@ -965,18 +1010,16 @@
 
         function createClickSound() {
             try {
-                const audioContext = new (window.AudioContext || window.webkitAudioContext)();
-                const oscillator = audioContext.createOscillator();
-                const gainNode = audioContext.createGain();
-                oscillator.connect(gainNode);
-                gainNode.connect(audioContext.destination);
-                oscillator.frequency.setValueAtTime(600, audioContext.currentTime);
-                oscillator.frequency.exponentialRampToValueAtTime(300, audioContext.currentTime + 0.15);
-                gainNode.gain.setValueAtTime(0.08, audioContext.currentTime);
-                gainNode.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + 0.15);
-                oscillator.start(audioContext.currentTime);
-                oscillator.stop(audioContext.currentTime + 0.15);
-            } catch (e) {}
+                const ctx = new (window.AudioContext || window.webkitAudioContext)();
+                const osc = ctx.createOscillator();
+                const gain = ctx.createGain();
+                osc.connect(gain); gain.connect(ctx.destination);
+                osc.frequency.setValueAtTime(600, ctx.currentTime);
+                osc.frequency.exponentialRampToValueAtTime(300, ctx.currentTime + 0.15);
+                gain.gain.setValueAtTime(0.08, ctx.currentTime);
+                gain.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime + 0.15);
+                osc.start(ctx.currentTime); osc.stop(ctx.currentTime + 0.15);
+            } catch(e) {}
         }
 
         function showHint(text) {
@@ -1015,6 +1058,7 @@
 
             renderer = new THREE.WebGLRenderer({ antialias: true });
             renderer.setSize(window.innerWidth, window.innerHeight);
+            renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
             renderer.shadowMap.enabled = true;
             renderer.shadowMap.type = THREE.PCFSoftShadowMap;
             renderer.setClearColor(0x59372b);
@@ -1027,8 +1071,7 @@
         }
 
         function setupElegantLighting() {
-            const ambientLight = new THREE.AmbientLight(0xf7e7ce, 0.4);
-            scene.add(ambientLight);
+            scene.add(new THREE.AmbientLight(0xf7e7ce, 0.4));
 
             const chandelierLight = new THREE.PointLight(0xcca98d, 1.5, 35);
             chandelierLight.position.set(0, 10, 0);
@@ -1069,19 +1112,21 @@
 
         function createStylishStreet() {
             const streetGroup = new THREE.Group();
-            const streetGeometry = new THREE.PlaneGeometry(150, 150);
-            const streetMaterial = new THREE.MeshLambertMaterial({ color: 0x9f624f, transparent: true, opacity: 0.8 });
-            const street = new THREE.Mesh(streetGeometry, streetMaterial);
+            const street = new THREE.Mesh(
+                new THREE.PlaneGeometry(150, 150),
+                new THREE.MeshLambertMaterial({ color: 0x9f624f, transparent: true, opacity: 0.8 })
+            );
             street.rotation.x = -Math.PI / 2;
             street.position.y = -0.5;
             street.receiveShadow = true;
             streetGroup.add(street);
 
             for (let i = 0; i < 200; i++) {
-                const cobbleGeometry = new THREE.BoxGeometry(0.8 + Math.random() * 0.4, 0.1, 0.8 + Math.random() * 0.4);
                 const baseColor = Math.random() > 0.5 ? 0xae9e8f : 0xcca98d;
-                const cobbleMaterial = new THREE.MeshLambertMaterial({ color: baseColor + Math.random() * 0x202020 });
-                const cobble = new THREE.Mesh(cobbleGeometry, cobbleMaterial);
+                const cobble = new THREE.Mesh(
+                    new THREE.BoxGeometry(0.8 + Math.random() * 0.4, 0.1, 0.8 + Math.random() * 0.4),
+                    new THREE.MeshLambertMaterial({ color: baseColor })
+                );
                 cobble.position.set((Math.random() - 0.5) * 140, -0.4, (Math.random() - 0.5) * 140);
                 cobble.rotation.y = Math.random() * Math.PI;
                 cobble.receiveShadow = true;
@@ -1100,552 +1145,984 @@
 
         function createStylishHouse(x, y, z, color) {
             const houseGroup = new THREE.Group();
-            const mainBuilding = new THREE.Mesh(new THREE.BoxGeometry(12, 15, 10), new THREE.MeshLambertMaterial({ color: color }));
+            const mainBuilding = new THREE.Mesh(
+                new THREE.BoxGeometry(12, 15, 10),
+                new THREE.MeshLambertMaterial({ color: color })
+            );
             mainBuilding.position.y = 7.5;
             mainBuilding.castShadow = true;
             houseGroup.add(mainBuilding);
 
-            const roof = new THREE.Mesh(new THREE.ConeGeometry(8, 6, 4), new THREE.MeshLambertMaterial({ color: 0x59372b }));
-            roof.position.y = 18;
+            const roofGeom = new THREE.ConeGeometry(9, 5, 4);
+            const roof = new THREE.Mesh(roofGeom, new THREE.MeshLambertMaterial({ color: 0x59372b }));
+            roof.position.y = 17.5;
             roof.rotation.y = Math.PI / 4;
-            roof.castShadow = true;
             houseGroup.add(roof);
 
-            const chimney = new THREE.Mesh(new THREE.BoxGeometry(1.5, 4, 1.5), new THREE.MeshLambertMaterial({ color: 0x59372b }));
-            chimney.position.set(3, 19, 2);
-            chimney.castShadow = true;
-            houseGroup.add(chimney);
+            for (let row = 0; row < 3; row++) {
+                for (let col = 0; col < 2; col++) {
+                    const win = new THREE.Mesh(
+                        new THREE.BoxGeometry(1.5, 1.5, 0.1),
+                        new THREE.MeshLambertMaterial({ color: 0xf7e7ce, emissive: 0xcca98d, emissiveIntensity: 0.3 })
+                    );
+                    win.position.set(-2 + col * 4, 3 + row * 4, 5.05);
+                    houseGroup.add(win);
+                }
+            }
 
-            createStylishWindows(houseGroup);
             houseGroup.position.set(x, y, z);
             scene.add(houseGroup);
         }
 
-        function createStylishWindows(parent) {
-            const windowPositions = [[-4,5,5.1],[0,5,5.1],[4,5,5.1],[-4,10,5.1],[0,10,5.1],[4,10,5.1]];
-            windowPositions.forEach(pos => {
-                const frame = new THREE.Mesh(new THREE.BoxGeometry(2.5, 3, 0.2), new THREE.MeshLambertMaterial({ color: 0xf7e7ce }));
-                frame.position.set(...pos);
-                parent.add(frame);
-                const glass = new THREE.Mesh(new THREE.BoxGeometry(2.2, 2.7, 0.05), new THREE.MeshLambertMaterial({ color: 0xcca98d, transparent: true, opacity: 0.7, emissive: 0x443322, emissiveIntensity: 0.1 }));
-                glass.position.set(pos[0], pos[1], pos[2] + 0.1);
-                parent.add(glass);
-                const wl = new THREE.PointLight(0xcca98d, 0.4, 8);
-                wl.position.set(pos[0], pos[1], pos[2] - 2);
-                parent.add(wl);
-            });
-        }
-
         function createInstitutionalBuilding(x, y, z) {
-            const buildingGroup = new THREE.Group();
-            const mainBuilding = new THREE.Mesh(new THREE.BoxGeometry(30, 20, 8), new THREE.MeshLambertMaterial({ color: 0xcca98d }));
-            mainBuilding.position.y = 10;
-            mainBuilding.castShadow = true;
-            buildingGroup.add(mainBuilding);
-            for (let i = 0; i < 7; i++) {
-                const column = new THREE.Mesh(new THREE.CylinderGeometry(0.8, 1, 16, 16), new THREE.MeshLambertMaterial({ color: 0xf7e7ce }));
-                column.position.set(-12 + i * 4, 8, 5);
-                column.castShadow = true;
-                buildingGroup.add(column);
+            const group = new THREE.Group();
+            const body = new THREE.Mesh(
+                new THREE.BoxGeometry(20, 25, 15),
+                new THREE.MeshLambertMaterial({ color: 0xae9e8f })
+            );
+            body.position.y = 12.5;
+            body.castShadow = true;
+            group.add(body);
+
+            for (let row = 0; row < 5; row++) {
+                for (let col = 0; col < 4; col++) {
+                    const win = new THREE.Mesh(
+                        new THREE.BoxGeometry(2, 2, 0.1),
+                        new THREE.MeshLambertMaterial({ color: 0xf7e7ce, emissive: 0xcca98d, emissiveIntensity: 0.2 })
+                    );
+                    win.position.set(-6 + col * 4, 4 + row * 4, 7.55);
+                    group.add(win);
+                }
             }
-            buildingGroup.position.set(x, y, z);
-            scene.add(buildingGroup);
+            group.position.set(x, y, z);
+            scene.add(group);
         }
 
         function createUrbanElements() {
-            createElegantFountain(-40, 0, -40);
-            createStylishStreetLamps();
-            createBeautifulTrees();
-        }
+            const treePositions = [
+                { x: -55, z: -40 },
+                { x: 55,  z: -40 },
+                { x: -60, z: 0   },
+                { x: 60,  z: 0   },
+                { x: -45, z: -70 },
+                { x: 0,   z: -75 },
+                { x: 45,  z: -70 },
+                { x: -65, z: 35  },
+                { x: 65,  z: 35  },
+                { x: -40, z: 65  },
+                { x: 40,  z: 65  },
+                { x: 0,   z: 75  }
+            ];
 
-        function createElegantFountain(x, y, z) {
-            const fg = new THREE.Group();
-            const basin = new THREE.Mesh(new THREE.CylinderGeometry(6,6,1.5,24), new THREE.MeshLambertMaterial({color:0xcca98d}));
-            basin.position.y = 0.75; basin.castShadow = true; fg.add(basin);
-            const water = new THREE.Mesh(new THREE.CylinderGeometry(5.5,5.5,0.8,24), new THREE.MeshLambertMaterial({color:0x9f624f,transparent:true,opacity:0.7}));
-            water.position.y = 1.1; fg.add(water);
-            const col = new THREE.Mesh(new THREE.CylinderGeometry(1.5,2,6,16), new THREE.MeshLambertMaterial({color:0xf7e7ce}));
-            col.position.y = 4.5; col.castShadow = true; fg.add(col);
-            fg.position.set(x, y, z); scene.add(fg);
-        }
+            treePositions.forEach(pos => {
+                const tree = new THREE.Group();
 
-        function createStylishStreetLamps() {
-            [[-30,0,-15],[-30,0,15],[30,0,-15],[30,0,15]].forEach(pos => {
-                const lg = new THREE.Group();
-                const pole = new THREE.Mesh(new THREE.CylinderGeometry(0.15,0.2,8,12), new THREE.MeshLambertMaterial({color:0x59372b}));
-                pole.position.y = 4; pole.castShadow = true; lg.add(pole);
-                const lantern = new THREE.Mesh(new THREE.SphereGeometry(0.8,12,8), new THREE.MeshLambertMaterial({color:0xf7e7ce,emissive:0xcca98d,emissiveIntensity:0.3,transparent:true,opacity:0.9}));
-                lantern.position.y = 8.5; lg.add(lantern);
-                const sl = new THREE.PointLight(0xcca98d, 0.8, 20);
-                sl.position.y = 8.5; lg.add(sl);
-                lg.position.set(...pos); scene.add(lg);
+                const trunk = new THREE.Mesh(
+                    new THREE.CylinderGeometry(1.2, 1.6, 15, 10),
+                    new THREE.MeshLambertMaterial({ color: 0x59372b })
+                );
+                trunk.position.y = 7.5;
+                tree.add(trunk);
+
+                const foliage1 = new THREE.Mesh(
+                    new THREE.SphereGeometry(9, 10, 10),
+                    new THREE.MeshLambertMaterial({ color: 0x2d5a27 })
+                );
+                foliage1.position.y = 20;
+                tree.add(foliage1);
+
+                const foliage2 = new THREE.Mesh(
+                    new THREE.SphereGeometry(7, 10, 10),
+                    new THREE.MeshLambertMaterial({ color: 0x3a7a30 })
+                );
+                foliage2.position.set(3, 17, 1);
+                tree.add(foliage2);
+
+                const foliage3 = new THREE.Mesh(
+                    new THREE.SphereGeometry(6, 10, 10),
+                    new THREE.MeshLambertMaterial({ color: 0x245220 })
+                );
+                foliage3.position.set(-2, 23, -1);
+                tree.add(foliage3);
+
+                tree.position.set(pos.x, 0, pos.z);
+                scene.add(tree);
             });
-        }
 
-        function createBeautifulTrees() {
-            [[-35,0,-10],[35,0,-10],[-25,0,40],[25,0,40],[0,0,45]].forEach(pos => {
-                const tg = new THREE.Group();
-                const trunk = new THREE.Mesh(new THREE.CylinderGeometry(1.2,2,12,12), new THREE.MeshLambertMaterial({color:0x59372b}));
-                trunk.position.y = 6; trunk.castShadow = true; tg.add(trunk);
-                const foliage = new THREE.Mesh(new THREE.SphereGeometry(7,16,12), new THREE.MeshLambertMaterial({color:0x228b22}));
-                foliage.position.y = 15; foliage.castShadow = true; tg.add(foliage);
-                tg.position.set(...pos); scene.add(tg);
-            });
         }
 
         function createElegantSalon() {
-            salon = new THREE.Group();
-            createBeautifulFloor();
-            createStylishWalls();
-            createElegantChandelier();
-            createChesterfieldSofa();
-            createMahoganyTable();
-            createAntiqueSideTable();
-            createExecutiveDesk();
-            createAntiqueBookshelf();
-            createVintageEntertainmentCenter();
-            createElegantFireplace();
-            createBeautifulPlants();
-            createElegantDecorations();
-            scene.add(salon);
-        }
+            const salonGroup = new THREE.Group();
 
-        function createBeautifulFloor() {
-            const floorGroup = new THREE.Group();
-            for (let row = 0; row < 40; row++) {
-                for (let col = 0; col < 50; col++) {
-                    const plankGeometry = new THREE.BoxGeometry(1.2, 0.05, 0.15);
-                    const woodVariation = (Math.random() - 0.5) * 0.1;
-                    const baseColors = [0x9f624f, 0xae9e8f, 0xcca98d];
-                    const baseColor = baseColors[Math.floor(Math.random() * baseColors.length)];
-                    const r = Math.max(0.2, Math.min(1, ((baseColor >> 16) & 0xFF) / 255 + woodVariation));
-                    const g = Math.max(0.2, Math.min(1, ((baseColor >> 8) & 0xFF) / 255 + woodVariation));
-                    const b = Math.max(0.2, Math.min(1, (baseColor & 0xFF) / 255 + woodVariation));
-                    const plank = new THREE.Mesh(plankGeometry, new THREE.MeshLambertMaterial({ color: new THREE.Color(r, g, b) }));
-                    plank.rotation.y = (row + col) % 2 === 0 ? Math.PI / 4 : -Math.PI / 4;
-                    plank.position.set(-25 + col * 1, 0, -20 + row * 1);
-                    plank.receiveShadow = true;
-                    floorGroup.add(plank);
+            // === FLOOR — parquet chaud ===
+            const floor = new THREE.Mesh(new THREE.PlaneGeometry(32, 28), new THREE.MeshLambertMaterial({ color: 0xc8a97e }));
+            floor.rotation.x = -Math.PI / 2;
+            floor.receiveShadow = true;
+            salonGroup.add(floor);
+
+            for (let i = -15; i < 15; i++) {
+                for (let j = -13; j < 13; j += 2.5) {
+                    const plank = new THREE.Mesh(
+                        new THREE.PlaneGeometry(2.2, 0.45),
+                        new THREE.MeshLambertMaterial({ color: i % 2 === 0 ? 0xc4a06a : 0xba9660 })
+                    );
+                    plank.rotation.x = -Math.PI / 2;
+                    plank.position.set(i * 2.2 + (j % 5 === 0 ? 0.5 : 0), 0.01, j);
+                    salonGroup.add(plank);
                 }
             }
-            salon.add(floorGroup);
-        }
 
-        function createStylishWalls() {
-            const wallMat = new THREE.MeshLambertMaterial({ color: 0xf7e7ce });
-            const wainscotMat = new THREE.MeshLambertMaterial({ color: 0xcca98d });
+            // === WALLS ===
+            const wallMat = new THREE.MeshLambertMaterial({ color: 0xf0e6d3 });
+            const backWall = new THREE.Mesh(new THREE.BoxGeometry(32, 16, 0.3), wallMat);
+            backWall.position.set(0, 8, -14);
+            salonGroup.add(backWall);
 
-            const backWall = new THREE.Mesh(new THREE.PlaneGeometry(40, 14), wallMat);
-            backWall.position.set(0, 7, -20); backWall.receiveShadow = true; salon.add(backWall);
-            const backWainscot = new THREE.Mesh(new THREE.PlaneGeometry(40, 4), wainscotMat);
-            backWainscot.position.set(0, 2, -19.9); salon.add(backWainscot);
+            const leftWall = new THREE.Mesh(new THREE.BoxGeometry(0.3, 16, 28), wallMat);
+            leftWall.position.set(-16, 8, 0);
+            salonGroup.add(leftWall);
 
-            const leftWall = new THREE.Mesh(new THREE.PlaneGeometry(40, 14), wallMat);
-            leftWall.position.set(-20, 7, 0); leftWall.rotation.y = Math.PI / 2; leftWall.receiveShadow = true; salon.add(leftWall);
-            const leftWainscot = new THREE.Mesh(new THREE.PlaneGeometry(40, 4), wainscotMat);
-            leftWainscot.position.set(-19.9, 2, 0); leftWainscot.rotation.y = Math.PI / 2; salon.add(leftWainscot);
+            const rightWall = new THREE.Mesh(new THREE.BoxGeometry(0.3, 16, 28), wallMat);
+            rightWall.position.set(16, 8, 0);
+            salonGroup.add(rightWall);
 
-            const rightWall = new THREE.Mesh(new THREE.PlaneGeometry(40, 14), wallMat);
-            rightWall.position.set(20, 7, 0); rightWall.rotation.y = -Math.PI / 2; rightWall.receiveShadow = true; salon.add(rightWall);
-            const rightWainscot = new THREE.Mesh(new THREE.PlaneGeometry(40, 4), wainscotMat);
-            rightWainscot.position.set(19.9, 2, 0); rightWainscot.rotation.y = -Math.PI / 2; salon.add(rightWainscot);
+            const ceiling = new THREE.Mesh(new THREE.PlaneGeometry(32, 28), new THREE.MeshLambertMaterial({ color: 0xfaf5ee }));
+            ceiling.rotation.x = Math.PI / 2;
+            ceiling.position.y = 16;
+            salonGroup.add(ceiling);
 
-            const ceiling = new THREE.Mesh(new THREE.PlaneGeometry(40, 40), new THREE.MeshLambertMaterial({ color: 0xf7e7ce }));
-            ceiling.position.set(0, 14, 0); ceiling.rotation.x = Math.PI / 2; ceiling.receiveShadow = true; salon.add(ceiling);
-        }
-
-        function createElegantChandelier() {
-            chandelierMesh = new THREE.Group();
-            const chain = new THREE.Mesh(new THREE.CylinderGeometry(0.03,0.03,3,12), new THREE.MeshLambertMaterial({color:0xcca98d,emissive:0x443322,emissiveIntensity:0.1}));
-            chain.position.y = 11.5; chandelierMesh.add(chain);
-            const body = new THREE.Mesh(new THREE.SphereGeometry(1.2,16,12), new THREE.MeshLambertMaterial({color:0x9f624f,emissive:0x2a1608,emissiveIntensity:0.2}));
-            body.position.y = 9; chandelierMesh.add(body);
-            for (let i = 0; i < 8; i++) {
-                const angle = (i / 8) * Math.PI * 2;
-                const arm = new THREE.Mesh(new THREE.TorusGeometry(1.5,0.08,6,16,Math.PI/2), new THREE.MeshLambertMaterial({color:0xcca98d}));
-                arm.position.set(Math.cos(angle)*0.8,8.5,Math.sin(angle)*0.8); arm.rotation.y=angle; arm.rotation.z=Math.PI; chandelierMesh.add(arm);
-                const bobeche = new THREE.Mesh(new THREE.CylinderGeometry(0.2,0.15,0.1,12), new THREE.MeshLambertMaterial({color:0xcca98d}));
-                bobeche.position.set(Math.cos(angle)*2.3,8.5,Math.sin(angle)*2.3); chandelierMesh.add(bobeche);
-                const candle = new THREE.Mesh(new THREE.CylinderGeometry(0.08,0.1,0.8,12), new THREE.MeshLambertMaterial({color:0xf7e7ce}));
-                candle.position.set(Math.cos(angle)*2.3,8.9,Math.sin(angle)*2.3); chandelierMesh.add(candle);
-                const flame = new THREE.Mesh(new THREE.SphereGeometry(0.04,6,4), new THREE.MeshLambertMaterial({color:0xcca98d,emissive:0xcca98d,emissiveIntensity:0.6}));
-                flame.position.set(Math.cos(angle)*2.3,9.3,Math.sin(angle)*2.3); flame.scale.set(0.8,1.5,0.8); chandelierMesh.add(flame);
-                for (let j = 0; j < 5; j++) {
-                    const crystal = new THREE.Mesh(new THREE.OctahedronGeometry(0.1), new THREE.MeshLambertMaterial({color:0xf7e7ce,transparent:true,opacity:0.9,emissive:0x443322,emissiveIntensity:0.1}));
-                    crystal.position.set(Math.cos(angle+j*0.2)*(2+j*0.1),8-j*0.3,Math.sin(angle+j*0.2)*(2+j*0.1)); chandelierMesh.add(crystal);
-                }
-            }
-            chandelierMesh.position.set(0,0,0); salon.add(chandelierMesh);
-        }
-
-        function createChesterfieldSofa() {
-            const sg = new THREE.Group();
-            const lm = new THREE.MeshLambertMaterial({color:0x9f624f,emissive:0x1a0e07,emissiveIntensity:0.1});
-            const base = new THREE.Mesh(new THREE.BoxGeometry(8,1,3.5), lm); base.position.y=0.5; base.castShadow=true; sg.add(base);
-            const back = new THREE.Mesh(new THREE.BoxGeometry(8,3.5,0.6), lm); back.position.set(0,2.2,1.45); back.castShadow=true; sg.add(back);
-            const la = new THREE.Mesh(new THREE.BoxGeometry(0.6,2.5,3.5), lm); la.position.set(-3.7,1.7,0); la.castShadow=true; sg.add(la);
-            const ra = new THREE.Mesh(new THREE.BoxGeometry(0.6,2.5,3.5), lm); ra.position.set(3.7,1.7,0); ra.castShadow=true; sg.add(ra);
-            const legm = new THREE.MeshLambertMaterial({color:0xf7e7ce});
-            [[-3.2,0.4,-1.5],[3.2,0.4,-1.5],[-3.2,0.4,1.5],[3.2,0.4,1.5]].forEach(p => {
-                const leg = new THREE.Mesh(new THREE.CylinderGeometry(0.12,0.15,0.8,12), legm); leg.position.set(...p); leg.castShadow=true; sg.add(leg);
+            // Moulures plafond
+            const mouldingMat = new THREE.MeshLambertMaterial({ color: 0xe8ddd0 });
+            [[0,15.7,-14,[32,0.25,0.25]], [0,15.7,14,[32,0.25,0.25]], [-16,15.7,0,[0.25,0.25,28]], [16,15.7,0,[0.25,0.25,28]]].forEach(([x,y,z,s]) => {
+                const m = new THREE.Mesh(new THREE.BoxGeometry(...s), mouldingMat);
+                m.position.set(x, y, z);
+                salonGroup.add(m);
             });
-            for (let i = 0; i < 3; i++) {
-                const cushion = new THREE.Mesh(new THREE.BoxGeometry(2.2,0.4,2.8), new THREE.MeshLambertMaterial({color:0xcca98d,emissive:0x2a1f05,emissiveIntensity:0.05}));
-                cushion.position.set(-2.5+i*2.5,1.2,-0.3); cushion.castShadow=true; sg.add(cushion);
+
+            // === GRANDE FENÊTRE MUR GAUCHE ===
+            const windowFrame = new THREE.Mesh(new THREE.BoxGeometry(0.4, 9, 7), new THREE.MeshLambertMaterial({ color: 0xd4c4a8 }));
+            windowFrame.position.set(-15.85, 8, -2);
+            salonGroup.add(windowFrame);
+
+            const windowGlass = new THREE.Mesh(new THREE.BoxGeometry(0.1, 8.2, 6.2), new THREE.MeshLambertMaterial({ color: 0xa8c8e8, transparent: true, opacity: 0.25, emissive: 0x8ab4d4, emissiveIntensity: 0.15 }));
+            windowGlass.position.set(-15.9, 8, -2);
+            salonGroup.add(windowGlass);
+
+            for (let side of [-1, 1]) {
+                const curtain = new THREE.Mesh(new THREE.BoxGeometry(0.15, 9.5, 1.2), new THREE.MeshLambertMaterial({ color: 0xd4b896 }));
+                curtain.position.set(-15.85, 7.8, -2 + side * 3.8);
+                salonGroup.add(curtain);
+                for (let f = 0; f < 3; f++) {
+                    const fold = new THREE.Mesh(new THREE.BoxGeometry(0.25, 9, 0.15), new THREE.MeshLambertMaterial({ color: 0xc8a882 }));
+                    fold.position.set(-15.75, 7.8, -2 + side * 3.8 + (f - 1) * 0.4);
+                    salonGroup.add(fold);
+                }
             }
-            sg.position.set(0,0,-6); salon.add(sg);
-        }
+            const rod = new THREE.Mesh(new THREE.CylinderGeometry(0.06, 0.06, 8.5, 8), new THREE.MeshLambertMaterial({ color: 0x8b7355 }));
+            rod.rotation.z = Math.PI / 2;
+            rod.position.set(-15.8, 12.8, -2);
+            salonGroup.add(rod);
 
-        function createMahoganyTable() {
-            const tg = new THREE.Group();
-            const mm = new THREE.MeshLambertMaterial({color:0x9f624f,emissive:0x1a0e07,emissiveIntensity:0.1});
-            const top = new THREE.Mesh(new THREE.CylinderGeometry(2.5,2.5,0.2,24), mm); top.position.y=1.5; top.castShadow=true; tg.add(top);
-            const base = new THREE.Mesh(new THREE.CylinderGeometry(0.8,1.5,1.5,16), mm); base.position.y=0.75; base.castShadow=true; tg.add(base);
-            for (let i=0;i<4;i++){const a=(i/4)*Math.PI*2; const foot=new THREE.Mesh(new THREE.SphereGeometry(0.2,8,6),mm); foot.position.set(Math.cos(a)*1.2,0.1,Math.sin(a)*1.2); foot.castShadow=true; tg.add(foot);}
-            createTeaService(tg);
-            tg.position.set(0,0,-10); salon.add(tg);
-        }
+            // === ÉTAGÈRE LEGO MUR DROIT — ouverte, bois clair ===
+            // Structure étagère ouverte (cadre + 5 planches)
+            const shelfWoodMat = new THREE.MeshLambertMaterial({ color: 0xc8a878 });
+            const shelfDarkMat = new THREE.MeshLambertMaterial({ color: 0xb89060 });
 
-        function createTeaService(parent) {
-            const sm = new THREE.MeshLambertMaterial({color:0xae9e8f,emissive:0x333333,emissiveIntensity:0.2});
-            const tp = new THREE.Mesh(new THREE.SphereGeometry(0.3,12,8), sm); tp.position.set(0,1.8,0); tp.castShadow=true; parent.add(tp);
-            const spout = new THREE.Mesh(new THREE.CylinderGeometry(0.05,0.08,0.4,8), sm); spout.position.set(0.35,1.8,0); spout.rotation.z=Math.PI/6; parent.add(spout);
-            for (let i=0;i<2;i++){const a=(i/2)*Math.PI+Math.PI/4; const saucer=new THREE.Mesh(new THREE.CylinderGeometry(0.15,0.15,0.02,16),sm); saucer.position.set(Math.cos(a)*0.8,1.71,Math.sin(a)*0.8); parent.add(saucer); const cup=new THREE.Mesh(new THREE.CylinderGeometry(0.08,0.1,0.12,12),sm); cup.position.set(Math.cos(a)*0.8,1.77,Math.sin(a)*0.8); cup.castShadow=true; parent.add(cup);}
-        }
+            // Panneau arrière
+            const shelfBack = new THREE.Mesh(new THREE.BoxGeometry(0.25, 12, 9), new THREE.MeshLambertMaterial({ color: 0xd4b88a }));
+            shelfBack.position.set(15.6, 7, -3);
+            salonGroup.add(shelfBack);
 
-        function createAntiqueSideTable() {
-            const tg = new THREE.Group();
-            const am = new THREE.MeshLambertMaterial({color:0x9f624f});
-            const top = new THREE.Mesh(new THREE.BoxGeometry(1.8,0.15,1.2),am); top.position.y=2; top.castShadow=true; tg.add(top);
-            const drawer = new THREE.Mesh(new THREE.BoxGeometry(1.6,0.3,1), new THREE.MeshLambertMaterial({color:0x59372b})); drawer.position.y=1.5; drawer.castShadow=true; tg.add(drawer);
-            const lm = new THREE.MeshLambertMaterial({color:0xcca98d});
-            [[-0.7,1,-0.5],[0.7,1,-0.5],[-0.7,1,0.5],[0.7,1,0.5]].forEach(p=>{const leg=new THREE.Mesh(new THREE.CylinderGeometry(0.06,0.08,2,12),lm); leg.position.set(...p); leg.castShadow=true; tg.add(leg);});
-            createElegantLamp(tg);
-            tg.position.set(-6,0,-6); salon.add(tg);
-        }
+            // Panneaux latéraux
+            for (let side of [-1, 1]) {
+                const panel = new THREE.Mesh(new THREE.BoxGeometry(0.7, 12, 0.25), shelfWoodMat);
+                panel.position.set(15.35, 7, -3 + side * 4.5);
+                salonGroup.add(panel);
+            }
 
-        function createElegantLamp(parent) {
-            const base = new THREE.Mesh(new THREE.CylinderGeometry(0.15,0.2,1.2,12), new THREE.MeshLambertMaterial({color:0x9f624f})); base.position.y=2.8; base.castShadow=true; parent.add(base);
-            const shade = new THREE.Mesh(new THREE.CylinderGeometry(0.8,1.2,0.8,12), new THREE.MeshLambertMaterial({color:0xf7e7ce,transparent:true,opacity:0.8,emissive:0x443322,emissiveIntensity:0.2})); shade.position.y=3.8; parent.add(shade);
-        }
+            // 5 planches étagères
+            const shelfY = [1.0, 3.2, 5.4, 7.6, 9.8];
+            shelfY.forEach(y => {
+                const plank = new THREE.Mesh(new THREE.BoxGeometry(0.6, 0.15, 9), shelfDarkMat);
+                plank.position.set(15.35, y, -3);
+                salonGroup.add(plank);
+            });
 
-        function createExecutiveDesk() {
-            const dg = new THREE.Group();
-            const mm = new THREE.MeshLambertMaterial({color:0x9f624f,emissive:0x1a0e07,emissiveIntensity:0.1});
-            const deskTop = new THREE.Mesh(new THREE.BoxGeometry(10,0.2,4),mm); deskTop.position.y=2.5; deskTop.castShadow=true; dg.add(deskTop);
-            const lc = new THREE.Mesh(new THREE.BoxGeometry(2,2.3,3.5),mm); lc.position.set(-3.5,1.35,0); lc.castShadow=true; dg.add(lc);
-            const rc = new THREE.Mesh(new THREE.BoxGeometry(2,2.3,3.5),mm); rc.position.set(3.5,1.35,0); rc.castShadow=true; dg.add(rc);
-            createBrassDetails(dg);
-            const monitor = new THREE.Mesh(new THREE.BoxGeometry(3,2.2,0.4), new THREE.MeshLambertMaterial({color:0x2c2c2c})); monitor.position.set(-1,3.8,-1); monitor.castShadow=true; dg.add(monitor);
-            const screenMat = new THREE.MeshLambertMaterial({color:0x001100,emissive:0x002200,emissiveIntensity:0.3});
-            computerMesh = new THREE.Mesh(new THREE.BoxGeometry(2.8,2,0.1), screenMat);
-            computerMesh.position.set(-1,3.8,-0.65); computerMesh.userData={clickable:true,type:'computer'}; dg.add(computerMesh); clickableObjects.push(computerMesh);
-            createDeskAccessories(dg);
-            dg.position.set(10,0,-6); salon.add(dg);
-        }
+            // Planche du haut
+            const topPlank = new THREE.Mesh(new THREE.BoxGeometry(0.6, 0.18, 9.5), shelfWoodMat);
+            topPlank.position.set(15.35, 13.05, -3);
+            salonGroup.add(topPlank);
 
-        function createBrassDetails(parent) {
-            const bm = new THREE.MeshLambertMaterial({color:0xcca98d,emissive:0x443322,emissiveIntensity:0.2});
-            const hg = new THREE.CylinderGeometry(0.03,0.03,0.3,8);
-            for(let i=0;i<3;i++){const h=new THREE.Mesh(hg,bm); h.position.set(-2.5,0.8+i*0.6,1.8); h.rotation.z=Math.PI/2; parent.add(h);}
-            for(let i=0;i<3;i++){const h=new THREE.Mesh(hg,bm); h.position.set(4.5,0.8+i*0.6,1.8); h.rotation.z=Math.PI/2; parent.add(h);}
-            const og = new THREE.SphereGeometry(0.08,8,6);
-            [[-4.8,2.6,-1.8],[4.8,2.6,-1.8],[-4.8,2.6,1.8],[4.8,2.6,1.8]].forEach(p=>{const o=new THREE.Mesh(og,bm); o.position.set(...p); parent.add(o);});
-        }
+            // ====== SETS LEGO sur chaque étagère ======
 
-        function createDeskAccessories(parent) {
-            const inkwell = new THREE.Mesh(new THREE.CylinderGeometry(0.15,0.2,0.2,12), new THREE.MeshLambertMaterial({color:0x9f624f,transparent:true,opacity:0.8})); inkwell.position.set(2,2.7,1); inkwell.castShadow=true; parent.add(inkwell);
-            const quill = new THREE.Mesh(new THREE.CylinderGeometry(0.01,0.02,0.8,8), new THREE.MeshLambertMaterial({color:0xf7e7ce})); quill.position.set(2.3,2.9,1); quill.rotation.z=Math.PI/6; parent.add(quill);
-            const lh = new THREE.Mesh(new THREE.BoxGeometry(0.5,0.6,0.1), new THREE.MeshLambertMaterial({color:0x9f624f})); lh.position.set(3.5,2.8,-0.5); lh.rotation.x=-Math.PI/8; parent.add(lh);
-            [0x59372b,0x9f624f,0xae9e8f].forEach((c,i)=>{const book=new THREE.Mesh(new THREE.BoxGeometry(0.8,0.08,1.2),new THREE.MeshLambertMaterial({color:c})); book.position.set(1,2.7+i*0.08,-1.5); book.rotation.y=i*0.1; book.castShadow=true; parent.add(book);});
-            const keyboard = new THREE.Mesh(new THREE.BoxGeometry(2.2,0.1,0.8), new THREE.MeshLambertMaterial({color:0xf7e7ce})); keyboard.position.set(-1,2.65,0.8); keyboard.castShadow=true; parent.add(keyboard);
-        }
+            // --- Étagère 1 (y=1.15) : VOITURE DE COURSE F1 rouge ===
+            // Châssis bas et long
+            const f1chassis = new THREE.Mesh(new THREE.BoxGeometry(0.3, 0.18, 1.9), new THREE.MeshLambertMaterial({ color: 0xcc1111 }));
+            f1chassis.position.set(15.22, 1.24, -3);
+            salonGroup.add(f1chassis);
+            // Cockpit
+            const f1cockpit = new THREE.Mesh(new THREE.BoxGeometry(0.28, 0.22, 0.55), new THREE.MeshLambertMaterial({ color: 0xcc1111 }));
+            f1cockpit.position.set(15.22, 1.44, -2.85);
+            salonGroup.add(f1cockpit);
+            // Visière cockpit
+            const f1visor = new THREE.Mesh(new THREE.BoxGeometry(0.22, 0.1, 0.4), new THREE.MeshLambertMaterial({ color: 0x222244, transparent: true, opacity: 0.8 }));
+            f1visor.position.set(15.22, 1.58, -2.88);
+            salonGroup.add(f1visor);
+            // Aileron avant
+            const f1frontWing = new THREE.Mesh(new THREE.BoxGeometry(0.55, 0.05, 0.3), new THREE.MeshLambertMaterial({ color: 0xaa0000 }));
+            f1frontWing.position.set(15.22, 1.17, -3.75);
+            salonGroup.add(f1frontWing);
+            // Aileron arrière
+            const f1rearWing = new THREE.Mesh(new THREE.BoxGeometry(0.55, 0.22, 0.08), new THREE.MeshLambertMaterial({ color: 0xaa0000 }));
+            f1rearWing.position.set(15.22, 1.42, -2.1);
+            salonGroup.add(f1rearWing);
+            // Roues (4)
+            [[-.24,-3.6],[-.24,-2.35],[.24,-3.6],[.24,-2.35]].forEach(([dx,dz]) => {
+                const w = new THREE.Mesh(new THREE.CylinderGeometry(0.12, 0.12, 0.12, 12), new THREE.MeshLambertMaterial({ color: 0x111111 }));
+                w.rotation.z = Math.PI/2;
+                w.position.set(15.22 + dx, 1.17, dz);
+                salonGroup.add(w);
+            });
+            // Numéro 1
+            const n1 = new THREE.Mesh(new THREE.BoxGeometry(0.04, 0.15, 0.15), new THREE.MeshLambertMaterial({ color: 0xffffff }));
+            n1.position.set(15.08, 1.42, -3.0);
+            salonGroup.add(n1);
+            // Boîte LEGO rouge derrière
+            const f1box = new THREE.Mesh(new THREE.BoxGeometry(0.3, 0.55, 0.7), new THREE.MeshLambertMaterial({ color: 0xdd2222 }));
+            f1box.position.set(15.22, 1.43, -2.1);
+            salonGroup.add(f1box);
 
-        function createAntiqueBookshelf() {
-            const sg = new THREE.Group();
-            const mm = new THREE.MeshLambertMaterial({color:0x9f624f,emissive:0x1a0e07,emissiveIntensity:0.1});
-            const lp = new THREE.Mesh(new THREE.BoxGeometry(0.4,10,3),mm); lp.position.set(-3.8,5,0); lp.castShadow=true; sg.add(lp);
-            const rp = new THREE.Mesh(new THREE.BoxGeometry(0.4,10,3),mm); rp.position.set(3.8,5,0); rp.castShadow=true; sg.add(rp);
-            const bp = new THREE.Mesh(new THREE.BoxGeometry(8,10,0.3),mm); bp.position.set(0,5,-1.35); bp.castShadow=true; sg.add(bp);
-            for(let i=0;i<=6;i++){const shelf=new THREE.Mesh(new THREE.BoxGeometry(8,0.3,3),mm); shelf.position.set(0,i*1.5+0.3,0); shelf.castShadow=true; sg.add(shelf);}
-            createBookCollection(sg);
-            sg.position.set(-12,0,-6); salon.add(sg);
-        }
+            // --- Étagère 2 (y=3.35) : VOITURE VINTAGE bleue ===
+            const vintChassis = new THREE.Mesh(new THREE.BoxGeometry(0.35, 0.22, 1.5), new THREE.MeshLambertMaterial({ color: 0x4a7abf }));
+            vintChassis.position.set(15.22, 3.47, -3.2);
+            salonGroup.add(vintChassis);
+            // Carrosserie bombée
+            const vintBody = new THREE.Mesh(new THREE.BoxGeometry(0.32, 0.28, 1.0), new THREE.MeshLambertMaterial({ color: 0x5a8acf }));
+            vintBody.position.set(15.22, 3.65, -3.1);
+            salonGroup.add(vintBody);
+            // Toit arrondi
+            const vintRoof = new THREE.Mesh(new THREE.SphereGeometry(0.22, 8, 6, 0, Math.PI*2, 0, Math.PI*0.5), new THREE.MeshLambertMaterial({ color: 0x4a7abf }));
+            vintRoof.position.set(15.22, 3.72, -3.05);
+            vintRoof.scale.set(1, 0.7, 1.2);
+            salonGroup.add(vintRoof);
+            // Pare-brise
+            const vintWind = new THREE.Mesh(new THREE.BoxGeometry(0.26, 0.18, 0.08), new THREE.MeshLambertMaterial({ color: 0x88bbdd, transparent: true, opacity: 0.7 }));
+            vintWind.position.set(15.22, 3.72, -2.7);
+            salonGroup.add(vintWind);
+            // Roues vintage
+            [[-.22,-3.65],[-.22,-2.75],[.22,-3.65],[.22,-2.75]].forEach(([dx,dz]) => {
+                const w = new THREE.Mesh(new THREE.CylinderGeometry(0.13, 0.13, 0.1, 12), new THREE.MeshLambertMaterial({ color: 0x222222 }));
+                w.rotation.z = Math.PI/2;
+                w.position.set(15.22+dx, 3.38, dz);
+                salonGroup.add(w);
+                const hub = new THREE.Mesh(new THREE.CylinderGeometry(0.06, 0.06, 0.11, 8), new THREE.MeshLambertMaterial({ color: 0xd4af70 }));
+                hub.rotation.z = Math.PI/2;
+                hub.position.set(15.22+dx, 3.38, dz);
+                salonGroup.add(hub);
+            });
+            // Phares ronds
+            for (let s of [-0.09, 0.09]) {
+                const headlight = new THREE.Mesh(new THREE.CylinderGeometry(0.05, 0.05, 0.04, 8), new THREE.MeshLambertMaterial({ color: 0xffffaa }));
+                headlight.rotation.x = Math.PI/2;
+                headlight.position.set(15.22+s, 3.5, -3.73);
+                salonGroup.add(headlight);
+            }
+            // Boîte LEGO bleue
+            const vintBox = new THREE.Mesh(new THREE.BoxGeometry(0.3, 0.6, 0.75), new THREE.MeshLambertMaterial({ color: 0x3a6aaf }));
+            vintBox.position.set(15.22, 3.65, -2.1);
+            salonGroup.add(vintBox);
 
-        function createBookCollection(parent) {
-            const collections = [
-                {colors:[0x59372b,0x9f624f,0xae9e8f],shelf:0},{colors:[0x9f624f,0xcca98d,0x59372b],shelf:1},
-                {colors:[0xae9e8f,0xf7e7ce,0x9f624f],shelf:2},{colors:[0x59372b,0xcca98d,0xae9e8f],shelf:3},
-                {colors:[0x9f624f,0xf7e7ce,0x59372b],shelf:4},{colors:[0xcca98d,0xae9e8f,0x9f624f],shelf:5}
+            // --- Étagère 3 (y=5.55) : HARRY POTTER — château Poudlard ===
+            // Tour principale
+            const hpTower = new THREE.Mesh(new THREE.BoxGeometry(0.32, 0.9, 0.32), new THREE.MeshLambertMaterial({ color: 0x8a8070 }));
+            hpTower.position.set(15.22, 6.0, -3.8);
+            salonGroup.add(hpTower);
+            // Toit conique tour
+            const hpRoof = new THREE.Mesh(new THREE.ConeGeometry(0.22, 0.5, 8), new THREE.MeshLambertMaterial({ color: 0x4a5560 }));
+            hpRoof.position.set(15.22, 6.67, -3.8);
+            salonGroup.add(hpRoof);
+            // Mur château principal
+            const hpWall = new THREE.Mesh(new THREE.BoxGeometry(0.28, 0.65, 1.1), new THREE.MeshLambertMaterial({ color: 0x9a9080 }));
+            hpWall.position.set(15.22, 5.88, -3.15);
+            salonGroup.add(hpWall);
+            // Fenêtres
+            [[5.73,-3.8],[5.73,-3.2],[5.73,-2.6]].forEach(([y,z]) => {
+                const win = new THREE.Mesh(new THREE.BoxGeometry(0.05, 0.14, 0.13), new THREE.MeshLambertMaterial({ color: 0xffdd88, emissive: 0xffaa00, emissiveIntensity: 0.5 }));
+                win.position.set(15.1, y, z);
+                salonGroup.add(win);
+            });
+            // Petite tour secondaire
+            const hpTower2 = new THREE.Mesh(new THREE.BoxGeometry(0.22, 0.65, 0.22), new THREE.MeshLambertMaterial({ color: 0x8a8070 }));
+            hpTower2.position.set(15.22, 5.88, -2.5);
+            salonGroup.add(hpTower2);
+            const hpRoof2 = new THREE.Mesh(new THREE.ConeGeometry(0.16, 0.38, 8), new THREE.MeshLambertMaterial({ color: 0x4a5560 }));
+            hpRoof2.position.set(15.22, 6.32, -2.5);
+            salonGroup.add(hpRoof2);
+            // Crénelages
+            for (let i = 0; i < 4; i++) {
+                const crenel = new THREE.Mesh(new THREE.BoxGeometry(0.12, 0.15, 0.12), new THREE.MeshLambertMaterial({ color: 0x8a8070 }));
+                crenel.position.set(15.22, 6.24, -3.45 + i * 0.28);
+                salonGroup.add(crenel);
+            }
+            // Socle
+            const hpBase = new THREE.Mesh(new THREE.BoxGeometry(0.4, 0.1, 1.7), new THREE.MeshLambertMaterial({ color: 0x5c7a3e }));
+            hpBase.position.set(15.22, 5.57, -3.15);
+            salonGroup.add(hpBase);
+            // Boîte HP jaune
+            const hpBox = new THREE.Mesh(new THREE.BoxGeometry(0.3, 0.65, 0.8), new THREE.MeshLambertMaterial({ color: 0xd4a020 }));
+            hpBox.position.set(15.22, 5.88, -2.0);
+            salonGroup.add(hpBox);
+            // Croix de Poudlard
+            const hpLogo = new THREE.Mesh(new THREE.BoxGeometry(0.04, 0.3, 0.06), new THREE.MeshLambertMaterial({ color: 0x8b0000 }));
+            hpLogo.position.set(15.08, 5.92, -2.0);
+            salonGroup.add(hpLogo);
+
+            // --- Étagère 4 (y=7.75) : FLEUR — bouquet botanique ===
+            // Pot
+            const potMat = new THREE.MeshLambertMaterial({ color: 0xd4956a });
+            const pot = new THREE.Mesh(new THREE.CylinderGeometry(0.22, 0.16, 0.4, 12), potMat);
+            pot.position.set(15.22, 7.97, -3.0);
+            salonGroup.add(pot);
+            const potRim = new THREE.Mesh(new THREE.CylinderGeometry(0.25, 0.22, 0.06, 12), potMat);
+            potRim.position.set(15.22, 8.19, -3.0);
+            salonGroup.add(potRim);
+            // Terre
+            const soil = new THREE.Mesh(new THREE.CylinderGeometry(0.22, 0.22, 0.04, 12), new THREE.MeshLambertMaterial({ color: 0x4a3020 }));
+            soil.position.set(15.22, 8.22, -3.0);
+            salonGroup.add(soil);
+            // Tiges + fleurs
+            const legoFlowerColors = [0xff6688, 0xffaa00, 0xff4488, 0xffdd00, 0xff88aa, 0xcc44ff];
+            const flowerPositions = [
+                {x:0, z:0, h:0.85, c:0}, {x:.12, z:.08, h:0.7, c:1},
+                {x:-.1, z:.06, h:0.75, c:2}, {x:.06, z:-.1, h:0.9, c:3},
+                {x:-.08, z:-.08, h:0.65, c:4}, {x:.14, z:-.06, h:0.78, c:5}
             ];
-            collections.forEach(c => {
-                const sy = c.shelf*1.5+1.1;
-                for(let i=0;i<12;i++){const book=new THREE.Mesh(new THREE.BoxGeometry(0.4,1.4,0.2),new THREE.MeshLambertMaterial({color:c.colors[Math.floor(Math.random()*c.colors.length)]})); book.position.set(-3.5+i*0.6,sy,1.3); book.rotation.y=(Math.random()-0.5)*0.2; book.castShadow=true; parent.add(book);}
-                if(c.shelf===0){const bust=new THREE.Mesh(new THREE.CylinderGeometry(0.3,0.4,0.8,12),new THREE.MeshLambertMaterial({color:0xf7e7ce})); bust.position.set(2.5,sy,1); bust.castShadow=true; parent.add(bust);}
-                if(c.shelf===2){const stand=new THREE.Mesh(new THREE.CylinderGeometry(0.1,0.15,0.4,12),new THREE.MeshLambertMaterial({color:0xcca98d})); stand.position.set(2.5,sy-0.2,1); parent.add(stand); const globe=new THREE.Mesh(new THREE.SphereGeometry(0.25,16,12),new THREE.MeshLambertMaterial({color:0x228b22})); globe.position.set(2.5,sy+0.1,1); globe.castShadow=true; parent.add(globe);}
-            });
-        }
-
-        function createVintageEntertainmentCenter() {
-            const cg = new THREE.Group();
-            const mm = new THREE.MeshLambertMaterial({color:0x9f624f,emissive:0x1a0e07,emissiveIntensity:0.1});
-            const cabinet = new THREE.Mesh(new THREE.BoxGeometry(12,3,2.5),mm); cabinet.position.y=1.5; cabinet.castShadow=true; cg.add(cabinet);
-            const base = new THREE.Mesh(new THREE.BoxGeometry(13,0.5,3),new THREE.MeshLambertMaterial({color:0xae9e8f})); base.position.y=0.25; base.castShadow=true; cg.add(base);
-            const tvFrame = new THREE.Mesh(new THREE.BoxGeometry(8,2.8,0.3),new THREE.MeshLambertMaterial({color:0x2c2c2c})); tvFrame.position.set(0,4.5,1.4); tvFrame.castShadow=true; cg.add(tvFrame);
-            const screenTexture = new THREE.CanvasTexture(createBeautifulScreenCanvas());
-            tvMesh = new THREE.Mesh(new THREE.BoxGeometry(7.5,2.5,0.1),new THREE.MeshLambertMaterial({map:screenTexture,emissive:0x332211,emissiveIntensity:0.2}));
-            tvMesh.position.set(0,4.5,1.75); tvMesh.userData={clickable:true,type:'tv'}; cg.add(tvMesh); clickableObjects.push(tvMesh);
-            createCabinetDoors(cg);
-            cg.position.set(0,0,-18); salon.add(cg);
-        }
-
-        function createBeautifulScreenCanvas() {
-            const canvas = document.createElement('canvas');
-            canvas.width = 750; canvas.height = 250;
-            const ctx = canvas.getContext('2d');
-            const gradient = ctx.createLinearGradient(0,0,750,250);
-            gradient.addColorStop(0,'#9f624f'); gradient.addColorStop(0.3,'#cca98d'); gradient.addColorStop(0.7,'#f7e7ce'); gradient.addColorStop(1,'#ae9e8f');
-            ctx.fillStyle = gradient; ctx.fillRect(0,0,750,250);
-            ctx.fillStyle = 'rgba(89,55,43,0.3)';
-            for(let i=0;i<20;i++){ctx.beginPath(); ctx.arc(Math.random()*750,Math.random()*250,Math.random()*30+10,0,Math.PI*2); ctx.fill();}
-            ctx.strokeStyle='#59372b'; ctx.lineWidth=8; ctx.strokeRect(0,0,750,250);
-            ctx.fillStyle='#59372b'; ctx.font='bold 32px Times New Roman'; ctx.textAlign='center'; ctx.fillText('Elegant Entertainment',375,130);
-            return canvas;
-        }
-
-        function createCabinetDoors(parent) {
-            const dm = new THREE.MeshLambertMaterial({color:0xae9e8f});
-            for(let side=0;side<2;side++){
-                const door=new THREE.Mesh(new THREE.BoxGeometry(2,2.8,0.1),dm); door.position.set(side===0?-4.5:4.5,1.5,1.3); door.castShadow=true; parent.add(door);
-                const glass=new THREE.Mesh(new THREE.BoxGeometry(1.5,2,0.05),new THREE.MeshLambertMaterial({color:[0x9f624f,0xcca98d][side],transparent:true,opacity:0.6})); glass.position.set(side===0?-4.5:4.5,1.5,1.35); parent.add(glass);
-                const handle=new THREE.Mesh(new THREE.SphereGeometry(0.08,8,6),new THREE.MeshLambertMaterial({color:0xcca98d})); handle.position.set(side===0?-3.7:3.7,1.5,1.4); parent.add(handle);
-            }
-        }
-
-        function createElegantFireplace() {
-            const fg = new THREE.Group();
-            const mantle=new THREE.Mesh(new THREE.BoxGeometry(8,1,2),new THREE.MeshLambertMaterial({color:0xf7e7ce})); mantle.position.set(0,4,-19.5); mantle.castShadow=true; fg.add(mantle);
-            const firebox=new THREE.Mesh(new THREE.BoxGeometry(6,3,1.5),new THREE.MeshLambertMaterial({color:0x59372b})); firebox.position.set(0,2.5,-19); firebox.castShadow=true; fg.add(firebox);
-            const fireGeom=new THREE.ConeGeometry(1,2,8);
-            const fireMat=new THREE.MeshLambertMaterial({color:0xcca98d,emissive:0xcca98d,emissiveIntensity:0.5,transparent:true,opacity:0.8});
-            for(let i=0;i<5;i++){const flame=new THREE.Mesh(fireGeom,fireMat); flame.position.set(-2+i*1,1.5+Math.random()*0.5,-18.5); flame.scale.set(0.5+Math.random()*0.5,1+Math.random()*0.5,0.5); fg.add(flame);}
-            const logMat=new THREE.MeshLambertMaterial({color:0x9f624f});
-            for(let i=0;i<3;i++){const log=new THREE.Mesh(new THREE.CylinderGeometry(0.15,0.2,2,8),logMat); log.position.set(-1+i*1,1.2,-18.5); log.rotation.z=(Math.random()-0.5)*0.5; log.castShadow=true; fg.add(log);}
-            for(let side=0;side<2;side++){const andiron=new THREE.Mesh(new THREE.CylinderGeometry(0.1,0.15,1.5,12),new THREE.MeshLambertMaterial({color:0xcca98d})); andiron.position.set(side===0?-2.5:2.5,1.75,-18.5); andiron.castShadow=true; fg.add(andiron);}
-            const fl=new THREE.PointLight(0xcca98d,1,15); fl.position.set(0,2,-18); fg.add(fl);
-            salon.add(fg);
-        }
-
-        function createBeautifulPlants() {
-            const ficusGroup = new THREE.Group();
-            const pot=new THREE.Mesh(new THREE.CylinderGeometry(1,1.3,1.5,16),new THREE.MeshLambertMaterial({color:0x9f624f,emissive:0x1a0e07,emissiveIntensity:0.05})); pot.position.y=0.75; pot.castShadow=true; ficusGroup.add(pot);
-            const trunk=new THREE.Mesh(new THREE.CylinderGeometry(0.15,0.25,4,12),new THREE.MeshLambertMaterial({color:0x9f624f})); trunk.position.y=3.5; trunk.castShadow=true; ficusGroup.add(trunk);
-            const fm=new THREE.MeshLambertMaterial({color:0x228b22});
-            for(let i=0;i<20;i++){const leaf=new THREE.Mesh(new THREE.SphereGeometry(0.4,8,6),fm); const a=Math.random()*Math.PI*2; const r=1+Math.random()*0.8; leaf.position.set(Math.cos(a)*r,4.5+Math.random()*2,Math.sin(a)*r); leaf.scale.set(1.2,0.4,0.8); leaf.castShadow=true; ficusGroup.add(leaf);}
-            ficusGroup.position.set(-16,0,12); salon.add(ficusGroup);
-
-            const palmGroup = new THREE.Group();
-            const pp=new THREE.Mesh(new THREE.CylinderGeometry(0.8,1,1.2,12),new THREE.MeshLambertMaterial({color:0xae9e8f})); pp.position.y=0.6; pp.castShadow=true; palmGroup.add(pp);
-            for(let i=0;i<3;i++){const pt=new THREE.Mesh(new THREE.CylinderGeometry(0.08,0.12,3+i*0.5,10),new THREE.MeshLambertMaterial({color:0xae9e8f})); pt.position.set((i-1)*0.3,2.7+i*0.25,0); pt.rotation.z=(i-1)*0.2; pt.castShadow=true; palmGroup.add(pt); for(let j=0;j<6;j++){const a=(j/6)*Math.PI*2; const frond=new THREE.Mesh(new THREE.BoxGeometry(0.1,1.5,0.05),new THREE.MeshLambertMaterial({color:0x228b22})); frond.position.set((i-1)*0.3+Math.cos(a)*0.5,4.2+i*0.25,Math.sin(a)*0.5); frond.rotation.y=a; frond.rotation.z=-Math.PI/6; frond.castShadow=true; palmGroup.add(frond);}}
-            palmGroup.position.set(16,0,12); salon.add(palmGroup);
-        }
-
-        function createElegantDecorations() {
-            createGrandfatherClock();
-            createCandelabras();
-            createCollectibles();
-        }
-
-        function createGrandfatherClock() {
-            const cg = new THREE.Group();
-            const bm=new THREE.MeshLambertMaterial({color:0x9f624f,emissive:0x1a0e07,emissiveIntensity:0.1});
-            const body=new THREE.Mesh(new THREE.BoxGeometry(1,7,1),bm); body.position.y=3.5; body.castShadow=true; cg.add(body);
-            const face=new THREE.Mesh(new THREE.CylinderGeometry(0.6,0.6,0.1,24),new THREE.MeshLambertMaterial({color:0xf7e7ce})); face.position.set(0,5.5,0.6); face.rotation.x=Math.PI/2; face.castShadow=true; cg.add(face);
-            const hm=new THREE.MeshLambertMaterial({color:0x59372b});
-            const hh=new THREE.Mesh(new THREE.BoxGeometry(0.02,0.4,0.01),hm); hh.position.set(0,5.5,0.65); hh.rotation.z=Math.PI/4; cg.add(hh);
-            const mh=new THREE.Mesh(new THREE.BoxGeometry(0.01,0.5,0.01),hm); mh.position.set(0,5.5,0.66); mh.rotation.z=Math.PI/6; cg.add(mh);
-            const base=new THREE.Mesh(new THREE.BoxGeometry(1.4,1,1.4),bm); base.position.y=0.5; base.castShadow=true; cg.add(base);
-            const pendulum=new THREE.Mesh(new THREE.SphereGeometry(0.1,12,8),new THREE.MeshLambertMaterial({color:0xcca98d})); pendulum.position.set(0,3,0.6); cg.add(pendulum);
-            cg.position.set(-18,0,8); salon.add(cg);
-        }
-
-        function createCandelabras() {
-            [{pos:[-4,2.1,-10],candles:5},{pos:[4,2.1,-10],candles:3},{pos:[0,4.5,-19.5],candles:7}].forEach(data => {
-                const cg=new THREE.Group();
-                const bm=new THREE.MeshLambertMaterial({color:0x9f624f,emissive:0x2a1608,emissiveIntensity:0.1});
-                const base=new THREE.Mesh(new THREE.CylinderGeometry(0.3,0.4,0.2,16),bm); base.position.y=0.1; base.castShadow=true; cg.add(base);
-                for(let i=0;i<data.candles;i++){
-                    const a=(i/data.candles)*Math.PI*2; const r=i===Math.floor(data.candles/2)?0:0.8; const h=i===Math.floor(data.candles/2)?1.2:1;
-                    if(r>0){const arm=new THREE.Mesh(new THREE.CylinderGeometry(0.02,0.03,0.6,8),bm); arm.position.set(Math.cos(a)*r/2,0.5,Math.sin(a)*r/2); arm.rotation.z=a; cg.add(arm);}
-                    const bob=new THREE.Mesh(new THREE.CylinderGeometry(0.08,0.06,0.05,12),bm); bob.position.set(Math.cos(a)*r,h,Math.sin(a)*r); cg.add(bob);
-                    const candle=new THREE.Mesh(new THREE.CylinderGeometry(0.04,0.05,0.6,12),new THREE.MeshLambertMaterial({color:0xf7e7ce})); candle.position.set(Math.cos(a)*r,h+0.3,Math.sin(a)*r); candle.castShadow=true; cg.add(candle);
-                    const flame=new THREE.Mesh(new THREE.SphereGeometry(0.025,6,4),new THREE.MeshLambertMaterial({color:0xcca98d,emissive:0xcca98d,emissiveIntensity:0.4})); flame.position.set(Math.cos(a)*r,h+0.65,Math.sin(a)*r); flame.scale.set(0.6,1.2,0.6); cg.add(flame);
-                    const cl=new THREE.PointLight(0xcca98d,0.2,8); cl.position.set(Math.cos(a)*r,h+0.65,Math.sin(a)*r); cg.add(cl);
+            flowerPositions.forEach(fp => {
+                const stem = new THREE.Mesh(new THREE.CylinderGeometry(0.025, 0.03, fp.h, 6), new THREE.MeshLambertMaterial({ color: 0x4a8020 }));
+                stem.position.set(15.22+fp.x, 8.22+fp.h/2, -3.0+fp.z);
+                salonGroup.add(stem);
+                // Pétales (5 autour)
+                for (let p = 0; p < 5; p++) {
+                    const pa = (p/5)*Math.PI*2;
+                    const petal = new THREE.Mesh(new THREE.SphereGeometry(0.07, 6, 5), new THREE.MeshLambertMaterial({ color: legoFlowerColors[fp.c] }));
+                    petal.scale.set(0.6, 0.4, 1.0);
+                    petal.position.set(15.22+fp.x+Math.cos(pa)*0.1, 8.22+fp.h, -3.0+fp.z+Math.sin(pa)*0.1);
+                    salonGroup.add(petal);
                 }
-                cg.position.set(...data.pos); salon.add(cg);
+                // Centre jaune
+                const center = new THREE.Mesh(new THREE.SphereGeometry(0.06, 8, 8), new THREE.MeshLambertMaterial({ color: 0xffee44, emissive: 0xffaa00, emissiveIntensity: 0.3 }));
+                center.position.set(15.22+fp.x, 8.22+fp.h, -3.0+fp.z);
+                salonGroup.add(center);
+                // Feuille
+                const leaf = new THREE.Mesh(new THREE.BoxGeometry(0.04, 0.22, 0.1), new THREE.MeshLambertMaterial({ color: 0x3a7010 }));
+                leaf.position.set(15.22+fp.x+.04, 8.22+fp.h*0.5, -3.0+fp.z);
+                leaf.rotation.z = 0.5;
+                salonGroup.add(leaf);
             });
-        }
+            // Boîte LEGO fleur verte
+            const flowerBox = new THREE.Mesh(new THREE.BoxGeometry(0.3, 0.55, 0.65), new THREE.MeshLambertMaterial({ color: 0x3a9040 }));
+            flowerBox.position.set(15.22, 8.07, -2.0);
+            salonGroup.add(flowerBox);
 
-        function createCollectibles() {
-            [{pos:[6,0,12],height:1.5},{pos:[-6,0,12],height:1.2}].forEach(vd => {
-                const vase=new THREE.Mesh(new THREE.CylinderGeometry(0.3,0.5,vd.height,16),new THREE.MeshLambertMaterial({color:0x59372b,emissive:0x0f0a08,emissiveIntensity:0.1})); vase.position.set(vd.pos[0],vd.height/2,vd.pos[1]); vase.castShadow=true; salon.add(vase);
-                const fc=[0xdc143c,0xff69b4,0xcca98d];
-                for(let i=0;i<5;i++){const a=(i/5)*Math.PI*2; const flower=new THREE.Mesh(new THREE.SphereGeometry(0.08,8,6),new THREE.MeshLambertMaterial({color:fc[Math.floor(Math.random()*fc.length)]})); flower.position.set(vd.pos[0]+Math.cos(a)*0.15,vd.height+0.3+Math.random()*0.2,vd.pos[1]+Math.sin(a)*0.15); salon.add(flower);}
+            // --- Étagère 5 (y=9.95) : VOITURE VINTAGE 2 — Coccinelle jaune ===
+            const bugChassis = new THREE.Mesh(new THREE.BoxGeometry(0.34, 0.2, 1.4), new THREE.MeshLambertMaterial({ color: 0xe8c020 }));
+            bugChassis.position.set(15.22, 10.07, -3.2);
+            salonGroup.add(bugChassis);
+            // Carrosserie ronde caractéristique
+            const bugBody = new THREE.Mesh(new THREE.SphereGeometry(0.28, 10, 8, 0, Math.PI*2, 0, Math.PI*0.6), new THREE.MeshLambertMaterial({ color: 0xeece30 }));
+            bugBody.scale.set(1, 0.85, 1.8);
+            bugBody.position.set(15.22, 10.14, -3.1);
+            salonGroup.add(bugBody);
+            // Fenêtres arrondies
+            const bugWind = new THREE.Mesh(new THREE.BoxGeometry(0.26, 0.18, 0.55), new THREE.MeshLambertMaterial({ color: 0x88bbdd, transparent: true, opacity: 0.7 }));
+            bugWind.position.set(15.22, 10.35, -3.05);
+            salonGroup.add(bugWind);
+            // Roues
+            [[-.22,-3.72],[-.22,-2.72],[.22,-3.72],[.22,-2.72]].forEach(([dx,dz]) => {
+                const w = new THREE.Mesh(new THREE.CylinderGeometry(0.13, 0.13, 0.1, 12), new THREE.MeshLambertMaterial({ color: 0x222222 }));
+                w.rotation.z = Math.PI/2;
+                w.position.set(15.22+dx, 9.98, dz);
+                salonGroup.add(w);
+                const hub = new THREE.Mesh(new THREE.CylinderGeometry(0.055, 0.055, 0.11, 8), new THREE.MeshLambertMaterial({ color: 0xcccccc }));
+                hub.rotation.z = Math.PI/2;
+                hub.position.set(15.22+dx, 9.98, dz);
+                salonGroup.add(hub);
             });
-            const sg=new THREE.Group();
-            const pedestal=new THREE.Mesh(new THREE.CylinderGeometry(0.6,0.8,1.2,16),new THREE.MeshLambertMaterial({color:0xf7e7ce})); pedestal.position.y=0.6; pedestal.castShadow=true; sg.add(pedestal);
-            const sculpture=new THREE.Mesh(new THREE.ConeGeometry(0.4,1.5,12),new THREE.MeshLambertMaterial({color:0x9f624f,emissive:0x2a1608,emissiveIntensity:0.1})); sculpture.position.y=2; sculpture.castShadow=true; sg.add(sculpture);
-            sg.position.set(0,0,12); salon.add(sg);
+            // Phares
+            for (let s of [-0.08, 0.08]) {
+                const hl = new THREE.Mesh(new THREE.SphereGeometry(0.045, 6, 6), new THREE.MeshLambertMaterial({ color: 0xffffcc, emissive: 0xffff88, emissiveIntensity: 0.4 }));
+                hl.position.set(15.22+s, 10.12, -3.83);
+                salonGroup.add(hl);
+            }
+            // Boîte LEGO jaune
+            const bugBox = new THREE.Mesh(new THREE.BoxGeometry(0.3, 0.6, 0.72), new THREE.MeshLambertMaterial({ color: 0xd4a010 }));
+            bugBox.position.set(15.22, 10.07, -2.1);
+            salonGroup.add(bugBox);
+
+            // Petite étiquette "LEGO" en relief sur chaque boîte (bande blanche)
+            [1.43, 3.65, 5.88, 8.07, 10.07].forEach(y => {
+                const tag = new THREE.Mesh(new THREE.BoxGeometry(0.04, 0.08, 0.4), new THREE.MeshLambertMaterial({ color: 0xffffff }));
+                tag.position.set(15.09, y, -2.0);
+                salonGroup.add(tag);
+            });
+
+            // Lumière étagère (éclairage doux)
+            const shelfLight = new THREE.PointLight(0xfff8f0, 0.4, 8);
+            shelfLight.position.set(14.5, 7, -3);
+            salonGroup.add(shelfLight);
+
+            // === CANAPÉ — RETOURNÉ, face à la TV (dos vers le joueur, face vers mur TV) ===
+            // TV est à z=-13.5, canapé face à la TV donc dossier vers z positif
+            const sofaFabric = new THREE.MeshLambertMaterial({ color: 0xe8dcc8 });
+            const sofaWood = new THREE.MeshLambertMaterial({ color: 0x8b6347 });
+
+            // Assise
+            const sofaBase = new THREE.Mesh(new THREE.BoxGeometry(11, 1.4, 4), sofaFabric);
+            sofaBase.position.set(0, 0.7, 3);
+            sofaBase.castShadow = true;
+            salonGroup.add(sofaBase);
+
+            // Dossier derrière (côté z positif = dos vers joueur)
+            const sofaBack = new THREE.Mesh(new THREE.BoxGeometry(11, 2.8, 0.9), sofaFabric);
+            sofaBack.position.set(0, 2.1, 5.2);
+            salonGroup.add(sofaBack);
+
+            // Accoudoirs
+            for (let side of [-1, 1]) {
+                const arm = new THREE.Mesh(new THREE.BoxGeometry(0.9, 2, 4), sofaFabric);
+                arm.position.set(side * 5.95, 1, 3);
+                salonGroup.add(arm);
+            }
+
+            // Pieds
+            for (let x of [-5, 5]) for (let z of [1.2, 4.8]) {
+                const leg = new THREE.Mesh(new THREE.CylinderGeometry(0.12, 0.1, 0.5, 8), sofaWood);
+                leg.position.set(x, 0.25, z);
+                salonGroup.add(leg);
+            }
+
+            // Coussins (visibles depuis l'avant, côté TV)
+            const cushionColors = [0xd4c4a8, 0xc8a882, 0xe0d4c0];
+            for (let i = -1; i <= 1; i++) {
+                const cushion = new THREE.Mesh(new THREE.BoxGeometry(2.5, 1.8, 0.5), new THREE.MeshLambertMaterial({ color: cushionColors[i+1] }));
+                cushion.position.set(i * 3.2, 2.2, 4.7);
+                cushion.rotation.x = 0.15;
+                salonGroup.add(cushion);
+            }
+
+            // === TABLE BASSE RONDE — centrée entre canapé et TV, très basse ===
+            // Canapé assise à z=3 (avant), TV à z=-13.5 → table à z=-1
+            const tableGroup = new THREE.Group();
+
+            const tableTop = new THREE.Mesh(new THREE.CylinderGeometry(2.2, 2.2, 0.14, 32), new THREE.MeshLambertMaterial({ color: 0x8b6347 }));
+            tableTop.position.y = 1.1; // table basse ~hauteur 1.1
+            tableGroup.add(tableTop);
+
+            // Pied central court
+            const tablePed = new THREE.Mesh(new THREE.CylinderGeometry(0.35, 0.5, 1.0, 16), new THREE.MeshLambertMaterial({ color: 0x7a5535 }));
+            tablePed.position.y = 0.52;
+            tableGroup.add(tablePed);
+
+            // Plateau base
+            const tableBase = new THREE.Mesh(new THREE.CylinderGeometry(1.0, 1.0, 0.08, 16), new THREE.MeshLambertMaterial({ color: 0x7a5535 }));
+            tableBase.position.y = 0.04;
+            tableGroup.add(tableBase);
+
+            // Objets déco table
+            for (let i = 0; i < 2; i++) {
+                const tbook = new THREE.Mesh(new THREE.BoxGeometry(1.0, 0.13, 0.75), new THREE.MeshLambertMaterial({ color: i === 0 ? 0xcca98d : 0x9f624f }));
+                tbook.position.set(-0.3 + i * 0.3, 1.18 + i * 0.13, 0.15);
+                tbook.rotation.y = (i - 0.5) * 0.2;
+                tableGroup.add(tbook);
+            }
+
+            const candle = new THREE.Mesh(new THREE.CylinderGeometry(0.1, 0.1, 0.45, 8), new THREE.MeshLambertMaterial({ color: 0xf7e7ce }));
+            candle.position.set(0.9, 1.32, -0.35);
+            tableGroup.add(candle);
+            const flame = new THREE.Mesh(new THREE.SphereGeometry(0.06, 6, 6), new THREE.MeshLambertMaterial({ color: 0xffaa00, emissive: 0xff6600, emissiveIntensity: 1.2 }));
+            flame.position.set(0.9, 1.6, -0.35);
+            tableGroup.add(flame);
+
+            // Centré entre canapé (z≈1 avant) et TV (z=-13.5) → z=-1.5
+            tableGroup.position.set(0, 0, -1.5);
+            salonGroup.add(tableGroup);
+
+            // === TAPIS — centré sous le canapé et la table ===
+            const rugBorder = new THREE.Mesh(new THREE.PlaneGeometry(15, 11), new THREE.MeshLambertMaterial({ color: 0xb8a48c }));
+            rugBorder.rotation.x = -Math.PI / 2;
+            rugBorder.position.set(0, 0.014, 1.0);
+            salonGroup.add(rugBorder);
+
+            const rug = new THREE.Mesh(new THREE.PlaneGeometry(14, 10), new THREE.MeshLambertMaterial({ color: 0xd4c4a8 }));
+            rug.rotation.x = -Math.PI / 2;
+            rug.position.set(0, 0.02, 1.0);
+            salonGroup.add(rug);
+
+            // === VASE DE TULIPES — coin gauche ===
+            const vaseGroup = new THREE.Group();
+            const vaseMat = new THREE.MeshLambertMaterial({ color: 0xe8ddd0 });
+            const vaseBody = new THREE.Mesh(new THREE.CylinderGeometry(0.55, 0.35, 2.2, 16), vaseMat);
+            vaseBody.position.y = 1.1; vaseGroup.add(vaseBody);
+            const vaseNeck = new THREE.Mesh(new THREE.CylinderGeometry(0.3, 0.55, 0.6, 16), vaseMat);
+            vaseNeck.position.y = 2.5; vaseGroup.add(vaseNeck);
+            const vaseRim = new THREE.Mesh(new THREE.CylinderGeometry(0.38, 0.3, 0.18, 16), vaseMat);
+            vaseRim.position.y = 2.88; vaseGroup.add(vaseRim);
+
+            const tulipColors = [0xe87d7d, 0xf0a0a0, 0xe85c5c, 0xf5b8b8, 0xd4607a];
+            for (let t = 0; t < 9; t++) {
+                const angle = (t / 9) * Math.PI * 2 + Math.random() * 0.4;
+                const r = 0.1 + Math.random() * 0.2;
+                const height = 2.8 + Math.random() * 1.4;
+                const stem = new THREE.Mesh(new THREE.CylinderGeometry(0.04, 0.05, height - 2.9, 6), new THREE.MeshLambertMaterial({ color: 0x5a8040 }));
+                stem.position.set(Math.cos(angle) * r, 2.9 + (height - 2.9) / 2, Math.sin(angle) * r);
+                stem.rotation.z = Math.sin(angle) * 0.15;
+                vaseGroup.add(stem);
+                const tulip = new THREE.Mesh(new THREE.SphereGeometry(0.22, 8, 8, 0, Math.PI * 2, 0, Math.PI * 0.6), new THREE.MeshLambertMaterial({ color: tulipColors[t % 5] }));
+                tulip.position.set(Math.cos(angle) * r, height + 0.1, Math.sin(angle) * r);
+                vaseGroup.add(tulip);
+                if (t % 3 === 0) {
+                    const leaf = new THREE.Mesh(new THREE.BoxGeometry(0.08, 0.9, 0.25), new THREE.MeshLambertMaterial({ color: 0x5a8040 }));
+                    leaf.position.set(Math.cos(angle) * 0.18, height - 1.2, Math.sin(angle) * 0.18);
+                    leaf.rotation.z = Math.sin(angle) * 0.5;
+                    vaseGroup.add(leaf);
+                }
+            }
+            vaseGroup.position.set(-13.5, 0.1, 4);
+            salonGroup.add(vaseGroup);
+
+            const vaseTable = new THREE.Mesh(new THREE.CylinderGeometry(0.7, 0.7, 0.1, 16), new THREE.MeshLambertMaterial({ color: 0x8b6347 }));
+            vaseTable.position.set(-13.5, 0.05, 4); salonGroup.add(vaseTable);
+
+            // === 3 CADRES ABSTRAITS MUR DU FOND ===
+            const frameMat = new THREE.MeshLambertMaterial({ color: 0x8b7355 });
+
+            // Grand cadre central
+            const frame1 = new THREE.Group();
+            frame1.add(new THREE.Mesh(new THREE.BoxGeometry(5.5, 4.2, 0.12), frameMat));
+            const f1c = new THREE.Mesh(new THREE.BoxGeometry(5.0, 3.7, 0.08), new THREE.MeshLambertMaterial({ color: 0xd4c4b0 }));
+            f1c.position.z = 0.04; frame1.add(f1c);
+            const abs1a = new THREE.Mesh(new THREE.BoxGeometry(2.2, 3.7, 0.05), new THREE.MeshLambertMaterial({ color: 0x8b7060 }));
+            abs1a.position.set(-1.0, 0, 0.07); frame1.add(abs1a);
+            frame1.position.set(0, 10, -13.8); salonGroup.add(frame1);
+
+            // Petit cadre gauche
+            const frame2 = new THREE.Group();
+            frame2.add(new THREE.Mesh(new THREE.BoxGeometry(2.8, 2.2, 0.1), frameMat));
+            const f2c = new THREE.Mesh(new THREE.BoxGeometry(2.4, 1.8, 0.07), new THREE.MeshLambertMaterial({ color: 0xe8e0d4 }));
+            f2c.position.z = 0.03; frame2.add(f2c);
+            for (let li = 0; li < 3; li++) {
+                const line = new THREE.Mesh(new THREE.BoxGeometry(2.4, 0.04, 0.04), new THREE.MeshLambertMaterial({ color: 0x9f7a5f }));
+                line.position.set(0, -0.5 + li * 0.5, 0.07); frame2.add(line);
+            }
+            frame2.position.set(-5.5, 9.5, -13.8); salonGroup.add(frame2);
+
+            // Petit cadre droit portrait
+            const frame3 = new THREE.Group();
+            frame3.add(new THREE.Mesh(new THREE.BoxGeometry(2.2, 3.2, 0.1), frameMat));
+            const f3c = new THREE.Mesh(new THREE.BoxGeometry(1.8, 2.8, 0.07), new THREE.MeshLambertMaterial({ color: 0xf0e8dc }));
+            f3c.position.z = 0.03; frame3.add(f3c);
+            const circle3 = new THREE.Mesh(new THREE.CircleGeometry(0.7, 32), new THREE.MeshLambertMaterial({ color: 0xb8967a, transparent: true, opacity: 0.4 }));
+            circle3.position.set(0, 0.3, 0.07); frame3.add(circle3);
+            frame3.position.set(5.5, 9.8, -13.8); salonGroup.add(frame3);
+
+            // === LAMPADAIRE TRIPODE ===
+            const lampGroup = new THREE.Group();
+            for (let i = 0; i < 3; i++) {
+                const a = (i / 3) * Math.PI * 2;
+                const leg = new THREE.Mesh(new THREE.CylinderGeometry(0.05, 0.06, 7, 8), new THREE.MeshLambertMaterial({ color: 0x8b7355 }));
+                leg.position.set(Math.cos(a) * 0.6, 3.5, Math.sin(a) * 0.6);
+                leg.rotation.z = Math.sin(a) * 0.18; leg.rotation.x = Math.cos(a) * 0.18;
+                lampGroup.add(leg);
+            }
+            const shade = new THREE.Mesh(new THREE.ConeGeometry(1.1, 1.6, 16, 1, true), new THREE.MeshLambertMaterial({ color: 0xf0e6d3, side: THREE.DoubleSide }));
+            shade.position.y = 7.8; lampGroup.add(shade);
+            const lampLight = new THREE.PointLight(0xfff3d4, 0.8, 12);
+            lampLight.position.y = 7.5; lampGroup.add(lampLight);
+            lampGroup.position.set(-10.5, 0, 4);
+            salonGroup.add(lampGroup);
+
+            // === MEUBLE TV / BUFFET ===
+            const tvBuffet = new THREE.Mesh(new THREE.BoxGeometry(10, 1.8, 2.2), new THREE.MeshLambertMaterial({ color: 0x8b6347 }));
+            tvBuffet.position.set(0, 0.9, -12.5); salonGroup.add(tvBuffet);
+
+            for (let side of [-1, 0, 1]) {
+                const door = new THREE.Mesh(new THREE.BoxGeometry(3.0, 1.5, 0.12), new THREE.MeshLambertMaterial({ color: 0x9f7a5a }));
+                door.position.set(side * 3.2, 0.9, -11.42); salonGroup.add(door);
+                const handle = new THREE.Mesh(new THREE.CylinderGeometry(0.06, 0.06, 0.6, 8), new THREE.MeshLambertMaterial({ color: 0xcca98d }));
+                handle.rotation.z = Math.PI / 2;
+                handle.position.set(side * 3.2, 0.9, -11.34); salonGroup.add(handle);
+            }
+
+            // === TV — PAYSAGE : ciel bleu, montagnes, lac ===
+            tvMesh = new THREE.Mesh(
+                new THREE.BoxGeometry(8.0, 4.5, 0.2),
+                new THREE.MeshLambertMaterial({ color: 0x111111 })
+            );
+            tvMesh.position.set(0, 5.0, -13.5);
+            tvMesh.userData = { type: 'tv', hint: '📺 Cliquez pour ouvrir la TV' };
+            salonGroup.add(tvMesh);
+            clickableObjects.push(tvMesh);
+
+            // Cadre TV
+            const tvBezel = new THREE.Mesh(new THREE.BoxGeometry(8.4, 4.9, 0.18), new THREE.MeshLambertMaterial({ color: 0x1a1a1a }));
+            tvBezel.position.set(0, 5.0, -13.52); salonGroup.add(tvBezel);
+
+            // --- Paysage coucher de soleil ---
+            // Ciel gradient (haut)
+            const sky = new THREE.Mesh(new THREE.BoxGeometry(7.6, 2.8, 0.05), new THREE.MeshLambertMaterial({ color: 0x3a7fc1, emissive: 0x1a4a80, emissiveIntensity: 0.4 }));
+            sky.position.set(0, 6.2, -13.36); salonGroup.add(sky);
+
+            // Soleil couchant
+            const sun = new THREE.Mesh(new THREE.CircleGeometry(0.45, 24), new THREE.MeshLambertMaterial({ color: 0xffcc44, emissive: 0xffaa00, emissiveIntensity: 1.0 }));
+            sun.position.set(1.8, 6.5, -13.34); salonGroup.add(sun);
+
+            // Halo soleil
+            const sunHalo = new THREE.Mesh(new THREE.CircleGeometry(0.75, 24), new THREE.MeshLambertMaterial({ color: 0xff8800, transparent: true, opacity: 0.25, emissive: 0xff6600, emissiveIntensity: 0.5 }));
+            sunHalo.position.set(1.8, 6.5, -13.335); salonGroup.add(sunHalo);
+
+            // Ciel bas / horizon orangé
+            const horizonGlow = new THREE.Mesh(new THREE.BoxGeometry(7.6, 0.9, 0.05), new THREE.MeshLambertMaterial({ color: 0xff8c3a, emissive: 0xff5500, emissiveIntensity: 0.35 }));
+            horizonGlow.position.set(0, 4.65, -13.355); salonGroup.add(horizonGlow);
+
+            // Montagnes fond (lointaines, bleutées)
+            const mtnColors = [0x4a6fa5, 0x5a7fb5, 0x6a8fc0];
+            const mtnData = [
+                {x:-3.0, w:2.8, h:1.5}, {x:-1.0, w:3.2, h:2.0}, {x:1.2, w:2.5, h:1.6},
+                {x:2.8, w:2.2, h:1.2}, {x:-2.2, w:1.8, h:1.1}
+            ];
+            mtnData.forEach((m, i) => {
+                const mtn = new THREE.Mesh(
+                    new THREE.ConeGeometry(m.w * 0.5, m.h, 4),
+                    new THREE.MeshLambertMaterial({ color: mtnColors[i % 3], emissive: 0x1a2a4a, emissiveIntensity: 0.2 })
+                );
+                mtn.position.set(m.x, 4.7 + m.h * 0.5, -13.34);
+                salonGroup.add(mtn);
+            });
+
+            // Montagnes avant (plus sombres, plus proches)
+            const mtnFrontData = [{x:-3.2, w:2.4, h:1.3}, {x:0, w:3.0, h:1.6}, {x:3.0, w:2.0, h:1.1}];
+            mtnFrontData.forEach(m => {
+                const mtn = new THREE.Mesh(
+                    new THREE.ConeGeometry(m.w * 0.5, m.h, 4),
+                    new THREE.MeshLambertMaterial({ color: 0x2a3d5a, emissive: 0x0a1020, emissiveIntensity: 0.3 })
+                );
+                mtn.position.set(m.x, 4.3 + m.h * 0.5, -13.33);
+                salonGroup.add(mtn);
+            });
+
+            // Lac (reflet)
+            const lake = new THREE.Mesh(new THREE.BoxGeometry(7.6, 0.9, 0.05), new THREE.MeshLambertMaterial({ color: 0x1a4a7a, emissive: 0x0a2a4a, emissiveIntensity: 0.4 }));
+            lake.position.set(0, 3.15, -13.355); salonGroup.add(lake);
+
+            // Reflet soleil sur lac
+            const lakeReflect = new THREE.Mesh(new THREE.BoxGeometry(0.6, 0.85, 0.04), new THREE.MeshLambertMaterial({ color: 0xffdd88, emissive: 0xffaa44, emissiveIntensity: 0.8, transparent: true, opacity: 0.6 }));
+            lakeReflect.position.set(1.8, 3.15, -13.34); salonGroup.add(lakeReflect);
+
+            // Sol devant lac
+            const foreground = new THREE.Mesh(new THREE.BoxGeometry(7.6, 0.5, 0.05), new THREE.MeshLambertMaterial({ color: 0x2d4a1a, emissive: 0x0a1a05, emissiveIntensity: 0.2 }));
+            foreground.position.set(0, 2.8, -13.355); salonGroup.add(foreground);
+
+
+            // Nuages
+            for (let c = 0; c < 4; c++) {
+                const cloud = new THREE.Mesh(new THREE.SphereGeometry(0.28, 8, 6), new THREE.MeshLambertMaterial({ color: 0xfff0e0, transparent: true, opacity: 0.65 }));
+                cloud.scale.set(1, 0.55, 0.3);
+                cloud.position.set(-2.8 + c * 1.8, 6.9 + (c % 2) * 0.35, -13.34); salonGroup.add(cloud);
+                const cloud2 = new THREE.Mesh(new THREE.SphereGeometry(0.2, 8, 6), new THREE.MeshLambertMaterial({ color: 0xffe8d0, transparent: true, opacity: 0.5 }));
+                cloud2.scale.set(1, 0.5, 0.3);
+                cloud2.position.set(-2.5 + c * 1.8, 6.85 + (c % 2) * 0.35, -13.34); salonGroup.add(cloud2);
+            }
+
+            // Barre TV bas (bande noire fine avec logo)
+            const tvBar = new THREE.Mesh(new THREE.BoxGeometry(7.6, 0.22, 0.05), new THREE.MeshLambertMaterial({ color: 0x080808 }));
+            tvBar.position.set(0, 2.72, -13.34); salonGroup.add(tvBar);
+
+            // Lumière TV douce
+            const tvLight = new THREE.PointLight(0x6699cc, 0.4, 8);
+            tvLight.position.set(0, 5.0, -12.5); salonGroup.add(tvLight);
+
+            // === BUREAU + ORDINATEUR mur gauche ===
+            const deskMat = new THREE.MeshLambertMaterial({ color: 0x8b6347 });
+            const desk = new THREE.Mesh(new THREE.BoxGeometry(7, 0.18, 3.2), deskMat);
+            desk.position.set(-10, 3.8, -6); salonGroup.add(desk);
+
+            for (let x of [-3, 3]) for (let z of [-1.2, 1.2]) {
+                const dleg = new THREE.Mesh(new THREE.BoxGeometry(0.12, 3.8, 0.12), new THREE.MeshLambertMaterial({ color: 0x9f8060 }));
+                dleg.position.set(-10 + x, 1.9, -6 + z); salonGroup.add(dleg);
+            }
+
+            computerMesh = new THREE.Mesh(
+                new THREE.BoxGeometry(3.2, 2.2, 0.25),
+                new THREE.MeshLambertMaterial({ color: 0xd0d0d0 })
+            );
+            computerMesh.position.set(-10, 5.9, -6.8);
+            computerMesh.userData = { type: 'computer', hint: '💻 Cliquez pour ouvrir l\'ordinateur' };
+            salonGroup.add(computerMesh);
+            clickableObjects.push(computerMesh);
+
+            const monitorScreen = new THREE.Mesh(new THREE.BoxGeometry(3.0, 2.0, 0.06), new THREE.MeshLambertMaterial({ color: 0x008080, emissive: 0x004444, emissiveIntensity: 0.5 }));
+            monitorScreen.position.set(-10, 5.9, -6.66); salonGroup.add(monitorScreen);
+
+            const monitorStand = new THREE.Mesh(new THREE.BoxGeometry(0.15, 0.9, 0.15), deskMat);
+            monitorStand.position.set(-10, 4.35, -6.8); salonGroup.add(monitorStand);
+            const monitorBase = new THREE.Mesh(new THREE.BoxGeometry(1.2, 0.08, 0.7), deskMat);
+            monitorBase.position.set(-10, 3.92, -6.8); salonGroup.add(monitorBase);
+            const keyboard = new THREE.Mesh(new THREE.BoxGeometry(2.2, 0.08, 0.8), new THREE.MeshLambertMaterial({ color: 0xd8d8d8 }));
+            keyboard.position.set(-10, 3.93, -5.6); salonGroup.add(keyboard);
+            const cup = new THREE.Mesh(new THREE.CylinderGeometry(0.18, 0.14, 0.35, 12), new THREE.MeshLambertMaterial({ color: 0xf0e8dc }));
+            cup.position.set(-8, 3.97, -6.5); salonGroup.add(cup);
+
+            // === LUSTRE DE LUXE TOURNANT ===
+            chandelierMesh = new THREE.Group();
+
+            const mainRod = new THREE.Mesh(new THREE.CylinderGeometry(0.07, 0.07, 3.5, 10), new THREE.MeshLambertMaterial({ color: 0xd4af70 }));
+            mainRod.position.y = 2.2; chandelierMesh.add(mainRod);
+
+            const rosette = new THREE.Mesh(new THREE.CylinderGeometry(0.8, 0.6, 0.3, 16), new THREE.MeshLambertMaterial({ color: 0xd4af70 }));
+            rosette.position.y = 3.8; chandelierMesh.add(rosette);
+
+            const outerRing = new THREE.Mesh(new THREE.TorusGeometry(2.8, 0.09, 12, 48), new THREE.MeshLambertMaterial({ color: 0xd4af70 }));
+            outerRing.position.y = 0.5; chandelierMesh.add(outerRing);
+
+            const innerRing = new THREE.Mesh(new THREE.TorusGeometry(1.5, 0.07, 10, 36), new THREE.MeshLambertMaterial({ color: 0xd4af70 }));
+            innerRing.position.y = 0.5; chandelierMesh.add(innerRing);
+
+            for (let i = 0; i < 8; i++) {
+                const a = (i / 8) * Math.PI * 2;
+                const arm = new THREE.Mesh(new THREE.CylinderGeometry(0.04, 0.04, 2.85, 6), new THREE.MeshLambertMaterial({ color: 0xd4af70 }));
+                arm.rotation.z = Math.PI / 2; arm.rotation.y = a;
+                arm.position.set(Math.cos(a) * 1.4, 0.5, Math.sin(a) * 1.4);
+                chandelierMesh.add(arm);
+            }
+
+            for (let ring = 0; ring < 2; ring++) {
+                const r = ring === 0 ? 2.8 : 1.5;
+                const count = ring === 0 ? 16 : 10;
+                for (let i = 0; i < count; i++) {
+                    const a = (i / count) * Math.PI * 2;
+                    const crystalH = 0.3 + Math.random() * 0.5;
+                    const crystal = new THREE.Mesh(
+                        new THREE.CylinderGeometry(0.04, 0.02, crystalH, 6),
+                        new THREE.MeshLambertMaterial({ color: 0xf0f8ff, transparent: true, opacity: 0.7, emissive: 0xaaccff, emissiveIntensity: 0.3 })
+                    );
+                    crystal.position.set(Math.cos(a) * r, 0.5 - crystalH / 2 - 0.1, Math.sin(a) * r);
+                    chandelierMesh.add(crystal);
+                }
+            }
+
+            const bulbMat = new THREE.MeshLambertMaterial({ color: 0xfffacd, emissive: 0xffdd88, emissiveIntensity: 1.2 });
+            [[2.8, 8], [1.5, 6]].forEach(([r, count]) => {
+                for (let i = 0; i < count; i++) {
+                    const a = (i / count) * Math.PI * 2;
+                    const bulb = new THREE.Mesh(new THREE.SphereGeometry(0.18, 10, 10), bulbMat);
+                    bulb.position.set(Math.cos(a) * r, 0.35, Math.sin(a) * r);
+                    chandelierMesh.add(bulb);
+                    const socket = new THREE.Mesh(new THREE.CylinderGeometry(0.07, 0.07, 0.2, 8), new THREE.MeshLambertMaterial({ color: 0xd4af70 }));
+                    socket.position.set(Math.cos(a) * r, 0.6, Math.sin(a) * r);
+                    chandelierMesh.add(socket);
+                }
+            });
+
+            const chanLight = new THREE.PointLight(0xfff8e0, 1.8, 30);
+            chanLight.position.y = 0; chandelierMesh.add(chanLight);
+
+            chandelierMesh.position.set(0, 14.5, 0);
+            salonGroup.add(chandelierMesh);
+
+            scene.add(salonGroup);
         }
 
         function setupEventListeners() {
-            window.addEventListener('resize', onWindowResize);
-            renderer.domElement.addEventListener('click', onMouseClick);
-            renderer.domElement.addEventListener('mousemove', onMouseMove);
-            renderer.domElement.addEventListener('mousedown', onMouseDown);
-            renderer.domElement.addEventListener('mouseup', onMouseUp);
-            renderer.domElement.addEventListener('wheel', onMouseWheel, { passive: false });
-            renderer.domElement.addEventListener('touchstart', onTouchStart, { passive: false });
-            renderer.domElement.addEventListener('touchmove', onTouchMove, { passive: false });
-            renderer.domElement.addEventListener('touchend', onTouchEnd, { passive: false });
-        }
+            const canvas = renderer.domElement;
 
-        function onTouchStart(event) {
-            event.preventDefault();
-            touches = Array.from(event.touches);
-            if (touches.length === 1) { cameraControls.isMouseDown = true; cameraControls.mouseX = touches[0].clientX; cameraControls.mouseY = touches[0].clientY; }
-            else if (touches.length === 2) { const dx=touches[0].clientX-touches[1].clientX; const dy=touches[0].clientY-touches[1].clientY; lastPinchDistance=Math.sqrt(dx*dx+dy*dy); }
-        }
+            // Mouse
+            canvas.addEventListener('mousedown', (e) => {
+                cameraControls.isMouseDown = true;
+                cameraControls.mouseX = e.clientX;
+                cameraControls.mouseY = e.clientY;
+            });
 
-        function onTouchMove(event) {
-            event.preventDefault();
-            touches = Array.from(event.touches);
-            if (touches.length === 1 && cameraControls.isMouseDown) {
-                const dx=touches[0].clientX-cameraControls.mouseX; const dy=touches[0].clientY-cameraControls.mouseY;
-                cameraControls.targetRotationX+=dx*0.01; cameraControls.targetRotationY+=dy*0.01;
-                cameraControls.targetRotationY=Math.max(-Math.PI/4,Math.min(Math.PI/4,cameraControls.targetRotationY));
-                cameraControls.mouseX=touches[0].clientX; cameraControls.mouseY=touches[0].clientY;
-            } else if (touches.length === 2) {
-                const dx=touches[0].clientX-touches[1].clientX; const dy=touches[0].clientY-touches[1].clientY; const distance=Math.sqrt(dx*dx+dy*dy);
-                if(lastPinchDistance>0){cameraControls.targetDistance-=(distance-lastPinchDistance)*0.05; cameraControls.targetDistance=Math.max(8,Math.min(50,cameraControls.targetDistance));}
-                lastPinchDistance=distance;
-            }
-        }
-
-        function onTouchEnd(event) {
-            event.preventDefault();
-            if (event.touches.length === 0) {
-                cameraControls.isMouseDown = false; lastPinchDistance = 0;
-                if (touches.length === 1) {
-                    const touch=touches[0]; mouse.x=(touch.clientX/window.innerWidth)*2-1; mouse.y=-(touch.clientY/window.innerHeight)*2+1;
-                    raycaster.setFromCamera(mouse, camera);
-                    const intersects=raycaster.intersectObjects(clickableObjects);
-                    if(intersects.length>0){const obj=intersects[0].object; if(obj.userData.type==='computer'){openComputer();createClickSound();}else if(obj.userData.type==='tv'){openTV();createClickSound();}}
+            canvas.addEventListener('mousemove', (e) => {
+                if (cameraControls.isMouseDown) {
+                    const dx = e.clientX - cameraControls.mouseX;
+                    const dy = e.clientY - cameraControls.mouseY;
+                    cameraControls.targetRotationY += dx * 0.005;
+                    cameraControls.targetRotationX += dy * 0.003;
+                    cameraControls.targetRotationX = Math.max(-0.6, Math.min(0.6, cameraControls.targetRotationX));
+                    cameraControls.mouseX = e.clientX;
+                    cameraControls.mouseY = e.clientY;
+                } else {
+                    mouse.x = (e.clientX / window.innerWidth) * 2 - 1;
+                    mouse.y = -(e.clientY / window.innerHeight) * 2 + 1;
+                    checkHover();
                 }
-            }
+            });
+
+            canvas.addEventListener('mouseup', (e) => {
+                if (!cameraControls.isMouseDown) return;
+                cameraControls.isMouseDown = false;
+                handleClick(e.clientX, e.clientY);
+            });
+
+            // Scroll zoom
+            canvas.addEventListener('wheel', (e) => {
+                cameraControls.targetDistance += e.deltaY * 0.05;
+                cameraControls.targetDistance = Math.max(8, Math.min(50, cameraControls.targetDistance));
+            });
+
+            // Touch
+            canvas.addEventListener('touchstart', (e) => {
+                e.preventDefault();
+                if (e.touches.length === 1) {
+                    cameraControls.isMouseDown = true;
+                    cameraControls.mouseX = e.touches[0].clientX;
+                    cameraControls.mouseY = e.touches[0].clientY;
+                } else if (e.touches.length === 2) {
+                    const dx = e.touches[0].clientX - e.touches[1].clientX;
+                    const dy = e.touches[0].clientY - e.touches[1].clientY;
+                    lastPinchDistance = Math.sqrt(dx * dx + dy * dy);
+                }
+            }, { passive: false });
+
+            canvas.addEventListener('touchmove', (e) => {
+                e.preventDefault();
+                if (e.touches.length === 1 && cameraControls.isMouseDown) {
+                    const dx = e.touches[0].clientX - cameraControls.mouseX;
+                    const dy = e.touches[0].clientY - cameraControls.mouseY;
+                    cameraControls.targetRotationY += dx * 0.005;
+                    cameraControls.targetRotationX += dy * 0.003;
+                    cameraControls.targetRotationX = Math.max(-0.6, Math.min(0.6, cameraControls.targetRotationX));
+                    cameraControls.mouseX = e.touches[0].clientX;
+                    cameraControls.mouseY = e.touches[0].clientY;
+                } else if (e.touches.length === 2) {
+                    const dx = e.touches[0].clientX - e.touches[1].clientX;
+                    const dy = e.touches[0].clientY - e.touches[1].clientY;
+                    const dist = Math.sqrt(dx * dx + dy * dy);
+                    const delta = lastPinchDistance - dist;
+                    cameraControls.targetDistance += delta * 0.1;
+                    cameraControls.targetDistance = Math.max(8, Math.min(50, cameraControls.targetDistance));
+                    lastPinchDistance = dist;
+                }
+            }, { passive: false });
+
+            canvas.addEventListener('touchend', (e) => {
+                cameraControls.isMouseDown = false;
+                if (e.changedTouches.length === 1 && e.touches.length === 0) {
+                    handleClick(e.changedTouches[0].clientX, e.changedTouches[0].clientY);
+                }
+            });
+
+            // Resize — recalcule camera et renderer
+            window.addEventListener('resize', () => {
+                camera.aspect = window.innerWidth / window.innerHeight;
+                camera.updateProjectionMatrix();
+                renderer.setSize(window.innerWidth, window.innerHeight);
+                renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+            });
         }
 
-        function onMouseDown(event) { cameraControls.isMouseDown=true; cameraControls.mouseX=event.clientX; cameraControls.mouseY=event.clientY; document.body.style.cursor='grabbing'; }
-        function onMouseUp() { cameraControls.isMouseDown=false; document.body.style.cursor='grab'; }
-
-        function onMouseMove(event) {
-            if (cameraControls.isMouseDown) {
-                const dx=event.clientX-cameraControls.mouseX; const dy=event.clientY-cameraControls.mouseY;
-                cameraControls.targetRotationX+=dx*0.008; cameraControls.targetRotationY+=dy*0.008;
-                cameraControls.targetRotationY=Math.max(-Math.PI/4,Math.min(Math.PI/4,cameraControls.targetRotationY));
-                cameraControls.mouseX=event.clientX; cameraControls.mouseY=event.clientY;
-            }
-            mouse.x=(event.clientX/window.innerWidth)*2-1; mouse.y=-(event.clientY/window.innerHeight)*2+1;
+        function checkHover() {
             raycaster.setFromCamera(mouse, camera);
-            const intersects=raycaster.intersectObjects(clickableObjects);
-            document.body.style.cursor=cameraControls.isMouseDown?'grabbing':'grab'; hideHint();
-            if(intersects.length>0){
-                const obj=intersects[0].object; document.body.style.cursor='pointer';
-                if(obj.userData.type==='computer') showHint("Click to open the computer");
-                else if(obj.userData.type==='tv') showHint('Click to open the television');
+            const intersects = raycaster.intersectObjects(clickableObjects);
+            if (intersects.length > 0) {
+                document.body.style.cursor = 'pointer';
+                showHint(intersects[0].object.userData.hint || 'Click to interact');
+            } else {
+                document.body.style.cursor = cameraControls.isMouseDown ? 'grabbing' : 'grab';
+                hideHint();
             }
         }
 
-        function onMouseWheel(event) { event.preventDefault(); cameraControls.targetDistance+=event.deltaY*0.02; cameraControls.targetDistance=Math.max(8,Math.min(50,cameraControls.targetDistance)); }
-
-        function onMouseClick(event) {
-            if(cameraControls.isMouseDown) return;
-            mouse.x=(event.clientX/window.innerWidth)*2-1; mouse.y=-(event.clientY/window.innerHeight)*2+1;
+        function handleClick(x, y) {
+            mouse.x = (x / window.innerWidth) * 2 - 1;
+            mouse.y = -(y / window.innerHeight) * 2 + 1;
             raycaster.setFromCamera(mouse, camera);
-            const intersects=raycaster.intersectObjects(clickableObjects);
-            if(intersects.length>0){const obj=intersects[0].object; if(obj.userData.type==='computer'){openComputer();createClickSound();}else if(obj.userData.type==='tv'){openTV();createClickSound();}}
+            const intersects = raycaster.intersectObjects(clickableObjects);
+            if (intersects.length > 0) {
+                const obj = intersects[0].object;
+                createClickSound();
+                if (obj.userData.type === 'computer') openComputer();
+                else if (obj.userData.type === 'tv') openTV();
+            }
         }
 
-        function onWindowResize() { camera.aspect=window.innerWidth/window.innerHeight; camera.updateProjectionMatrix(); renderer.setSize(window.innerWidth,window.innerHeight); }
-
-        function openComputer() { document.getElementById('computerOverlay').classList.add('active'); }
-        function closeComputer() { document.getElementById('computerOverlay').classList.remove('active'); document.querySelectorAll('.window').forEach(w=>w.classList.remove('active')); }
-        function openTV() { document.getElementById('tvOverlay').classList.add('active'); }
-        function closeTV() { document.getElementById('tvOverlay').classList.remove('active'); }
-
-        function openApp(appName) {
-            createClickSound();
-            const urls = {netflix:'https://www.netflix.com',youtube:'https://www.youtube.com',spotify:'https://www.spotify.com',prime:'https://www.primevideo.com',disney:'https://www.disneyplus.com',games:'https://play.google.com/store'};
-            if(urls[appName]) window.open(urls[appName],'_blank');
+        function openComputer() {
+            document.getElementById('computerOverlay').classList.add('active');
         }
 
-        function openWindow(windowName) {
-            createClickSound();
-            document.querySelectorAll('.window').forEach(w=>w.classList.remove('active'));
-            const tw=document.getElementById('window-'+windowName);
-            if(tw){tw.classList.add('active'); tw.style.left=`${300+Math.random()*100-50}px`; tw.style.top=`${100+Math.random()*50-25}px`;}
+        function closeComputer() {
+            document.getElementById('computerOverlay').classList.remove('active');
+            document.querySelectorAll('.window').forEach(w => w.classList.remove('active'));
         }
 
-        function closeWindow(windowName) {
+        function openTV() {
+            document.getElementById('tvOverlay').classList.add('active');
+        }
+
+        function closeTV() {
+            document.getElementById('tvOverlay').classList.remove('active');
+        }
+
+        function openWindow(name) {
+            document.querySelectorAll('.window').forEach(w => w.classList.remove('active'));
+            const win = document.getElementById('window-' + name);
+            if (!win) return;
+
+            // Centre dynamiquement sur mobile
+            if (isMobile()) {
+                win.style.removeProperty('top');
+                win.style.removeProperty('left');
+                win.style.removeProperty('width');
+                win.style.removeProperty('height');
+            }
+            win.classList.add('active');
             createClickSound();
-            const tw=document.getElementById('window-'+windowName);
-            if(tw) tw.classList.remove('active');
+        }
+
+        function closeWindow(name) {
+            const win = document.getElementById('window-' + name);
+            if (win) win.classList.remove('active');
+        }
+
+        function openApp(name) {
+            const urls = {
+                netflix: 'https://www.netflix.com',
+                youtube: 'https://www.youtube.com',
+                spotify: 'https://www.spotify.com',
+                prime: 'https://www.primevideo.com',
+                disney: 'https://www.disneyplus.com',
+                games: '#'
+            };
+            if (urls[name] && urls[name] !== '#') {
+                window.open(urls[name], '_blank');
+            }
+            createClickSound();
         }
 
         function animate() {
             requestAnimationFrame(animate);
-            cameraControls.rotationX+=(cameraControls.targetRotationX-cameraControls.rotationX)*0.08;
-            cameraControls.rotationY+=(cameraControls.targetRotationY-cameraControls.rotationY)*0.08;
-            cameraControls.distance+=(cameraControls.targetDistance-cameraControls.distance)*0.08;
-            if(autoRotateEnabled) cameraControls.targetRotationX+=0.005;
-            camera.position.x=Math.cos(cameraControls.rotationX)*cameraControls.distance*Math.cos(cameraControls.rotationY);
-            camera.position.y=Math.sin(cameraControls.rotationY)*cameraControls.distance+12;
-            camera.position.z=Math.sin(cameraControls.rotationX)*cameraControls.distance*Math.cos(cameraControls.rotationY)+20;
-            camera.lookAt(0,5,0);
 
-            const time=Date.now()*0.0003;
-            if(chandelierMesh){chandelierMesh.rotation.y=time*0.5; chandelierMesh.children.forEach(c=>{if(c.material&&c.material.emissiveIntensity!==undefined)c.material.emissiveIntensity=0.1+Math.sin(time*3+c.position.x)*0.05;});}
-            if(computerMesh) computerMesh.material.emissiveIntensity=0.2+Math.sin(time*2)*0.1;
-            if(tvMesh) tvMesh.material.emissiveIntensity=0.15+Math.sin(time*1.5)*0.08;
+            // Rotate chandelier
+            if (chandelierMesh) {
+                chandelierMesh.rotation.y += 0.004;
+            }
 
-            salon.children.forEach(child=>{
-                if(child.isGroup){child.children.forEach(sc=>{if(sc.material&&sc.material.emissive&&sc.material.emissiveIntensity!==undefined&&sc.geometry&&sc.geometry.type==='ConeGeometry'){sc.material.emissiveIntensity=0.4+Math.sin(time*8+sc.position.x)*0.2; sc.scale.y=1+Math.sin(time*6+sc.position.z)*0.1;}});}
-            });
+            if (cameraControls.autoRotate) {
+                cameraControls.targetRotationY += 0.003;
+            }
+
+            cameraControls.rotationX += (cameraControls.targetRotationX - cameraControls.rotationX) * 0.05;
+            cameraControls.rotationY += (cameraControls.targetRotationY - cameraControls.rotationY) * 0.05;
+            cameraControls.distance += (cameraControls.targetDistance - cameraControls.distance) * 0.05;
+
+            const x = Math.sin(cameraControls.rotationY) * Math.cos(cameraControls.rotationX) * cameraControls.distance;
+            const y = 12 + Math.sin(cameraControls.rotationX) * cameraControls.distance * 0.5;
+            const z = Math.cos(cameraControls.rotationY) * Math.cos(cameraControls.rotationX) * cameraControls.distance;
+
+            camera.position.set(x, Math.max(3, y), z);
+            camera.lookAt(0, 5, 0);
 
             renderer.render(scene, camera);
-        }
-
-        let draggedWindow = null;
-        let dragOffset = { x: 0, y: 0 };
-        document.addEventListener('mousedown', e=>{if(e.target.classList.contains('window-header')){draggedWindow=e.target.closest('.window'); const r=draggedWindow.getBoundingClientRect(); dragOffset.x=e.clientX-r.left; dragOffset.y=e.clientY-r.top; e.preventDefault();}});
-        document.addEventListener('mousemove', e=>{if(draggedWindow){draggedWindow.style.left=`${e.clientX-dragOffset.x}px`; draggedWindow.style.top=`${e.clientY-dragOffset.y}px`; e.preventDefault();}});
-        document.addEventListener('mouseup', ()=>{draggedWindow=null;});
-
-        document.addEventListener('keydown', event=>{
-            const co=document.getElementById('computerOverlay'); const tv=document.getElementById('tvOverlay');
-            if(co.classList.contains('active')&&event.key==='Escape') closeComputer();
-            if(tv.classList.contains('active')&&event.key==='Escape') closeTV();
-            if(!co.classList.contains('active')&&!tv.classList.contains('active')){
-                if(event.key==='r'||event.key==='R') resetCamera();
-                if(event.key===' '){event.preventDefault(); autoRotate();}
-            }
-        });
-
-        window.addEventListener('orientationchange', ()=>{setTimeout(()=>onWindowResize(),100);});
-
-        if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
-            renderer.shadowMap.type=THREE.BasicShadowMap;
-            scene.fog=new THREE.Fog(0x59372b,20,80);
         }
     </script>
 </body>
